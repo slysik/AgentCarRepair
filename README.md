@@ -19,9 +19,12 @@ This application serves as a web frontend for Azure AI Foundry agent services, s
 ## 🛠️ Prerequisites
 
 ### Azure Requirements
+- Azure Data Lake Storage (ADLS Gen2)
+- Azure AI Search 
 - Azure subscription with AI Foundry project
 - Service principal with appropriate permissions
 - Azure AI agent configured for car repair assistance
+- Download Free Car Manuals here: https://www.allcarmanuals.com/makesmodels.html
 
 ### System Requirements
 - Python 3.8 or higher
