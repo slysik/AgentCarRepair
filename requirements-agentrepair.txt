@@ -1,0 +1,145 @@
+# Azure AI Foundry AgentCarRepair Web Application Dependencies
+# 
+# This file contains all the Python package dependencies required to run
+# the Azure AI Foundry AgentCarRepair web application successfully.
+#
+# Installation:
+#   pip install -r requirements-agentrepair.txt
+#
+# Python Version: 3.8 or higher recommended
+# Last Updated: August 19, 2025
+
+# ============================================================================
+# CORE DEPENDENCIES (Required)
+# ============================================================================
+
+# Flask web framework - Main web application framework
+Flask>=3.0.0
+    # Flask is the core web framework that provides:
+    # - HTTP request/response handling
+    # - Template rendering (Jinja2)
+    # - Session management
+    # - Static file serving
+    # - URL routing and view functions
+
+# Azure AI and Identity packages - Core Azure integration
+azure-ai-projects>=1.0.0
+    # Azure AI Projects SDK provides:
+    # - AI Foundry project client
+    # - Agent management APIs
+    # - Conversation thread handling
+    # - Message processing capabilities
+
+azure-identity>=1.15.0
+    # Azure Identity library provides:
+    # - DefaultAzureCredential for automatic auth
+    # - ClientSecretCredential for service principal auth
+    # - Integration with Azure authentication systems
+    # - Token management and refresh
+
+# ============================================================================
+# FLASK ECOSYSTEM DEPENDENCIES
+# ============================================================================
+# These are typically installed automatically with Flask but listed explicitly
+# for version control and security updates
+
+Werkzeug>=3.0.0
+    # WSGI utility library that provides:
+    # - HTTP utilities and data structures
+    # - Development server
+    # - Debug tools and error handling
+
+Jinja2>=3.1.0
+    # Template engine that provides:
+    # - HTML template rendering
+    # - Template inheritance and macros
+    # - Automatic escaping for security
+
+MarkupSafe>=2.1.0
+    # String handling library that provides:
+    # - Safe string markup for templates
+    # - HTML escaping functions
+    # - XSS protection utilities
+
+itsdangerous>=2.1.0
+    # Cryptographic signing library that provides:
+    # - Session data signing
+    # - CSRF token generation
+    # - Secure cookie handling
+
+click>=8.1.0
+    # Command line interface library that provides:
+    # - Flask CLI commands
+    # - Application management tools
+    # - Custom command creation
+
+# ============================================================================
+# OPTIONAL DEPENDENCIES
+# ============================================================================
+
+# Environment variable management (RECOMMENDED)
+python-dotenv>=1.0.0
+    # Provides .env file support for:
+    # - Local development configuration
+    # - Environment variable loading
+    # - Configuration management
+    # Note: Application works without this but requires manual env var setup
+
+# ============================================================================
+# PRODUCTION DEPLOYMENT DEPENDENCIES (Optional)
+# ============================================================================
+# Uncomment these for production deployments
+
+# WSGI HTTP Server for production
+# gunicorn>=21.0.0
+    # Production WSGI server for Linux/Unix deployments
+    # Usage: gunicorn -w 4 -b 0.0.0.0:5000 AgentRepair:app
+
+# Alternative WSGI server for Windows
+# waitress>=2.1.0
+    # Cross-platform WSGI server, good for Windows deployments
+    # Usage: waitress-serve --host=0.0.0.0 --port=5000 AgentRepair:app
+
+# ============================================================================
+# DEVELOPMENT DEPENDENCIES (Optional)
+# ============================================================================
+# Uncomment these for development work
+
+# Code formatting and linting
+# black>=23.0.0          # Code formatter
+# flake8>=6.0.0          # Linting and style checking
+# pylint>=3.0.0          # Advanced code analysis
+
+# Testing frameworks
+# pytest>=7.0.0          # Testing framework
+# pytest-flask>=1.2.0    # Flask-specific test utilities
+# pytest-cov>=4.0.0      # Test coverage reporting
+
+# Type checking
+# mypy>=1.0.0            # Static type checking
+# types-Flask>=1.1.0     # Flask type stubs
+
+# ============================================================================
+# SECURITY NOTES
+# ============================================================================
+# 
+# 1. Keep all packages updated to latest stable versions for security patches
+# 2. Regularly run: pip list --outdated to check for updates
+# 3. Consider using pip-audit for security vulnerability scanning
+# 4. Use virtual environments to isolate dependencies
+#
+# Update command: pip install -r requirements-agentrepair.txt --upgrade
+#
+# ============================================================================
+# COMPATIBILITY NOTES
+# ============================================================================
+#
+# This application has been tested with:
+# - Python 3.8, 3.9, 3.10, 3.11, 3.12
+# - Windows 10/11, macOS, Ubuntu Linux
+# - Azure AI Foundry (latest version)
+#
+# Minimum requirements:
+# - Python 3.8+ (for typing support and async features)
+# - pip 21.0+ (for modern dependency resolution)
+#

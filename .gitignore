@@ -1,0 +1,293 @@
+# Azure AI Foundry AgentCarRepair - Git Ignore Rules
+# This file specifies intentionally untracked files that Git should ignore
+
+# ============================================================================
+# SENSITIVE CONFIGURATION FILES (NEVER COMMIT THESE!)
+# ============================================================================
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+*.env
+
+# Azure credentials and secrets
+azure.json
+azure-credentials.json
+service-principal.json
+
+# ============================================================================
+# PYTHON SPECIFIC
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.env/
+venv.bak/
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# ============================================================================
+# FLASK SPECIFIC
+# ============================================================================
+
+# Flask instance folder
+instance/
+
+# Flask session files
+flask_session/
+
+# Flask cache
+.webassets-cache
+
+# ============================================================================
+# DEVELOPMENT TOOLS
+# ============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ============================================================================
+# OPERATING SYSTEM
+# ============================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# LOGS AND RUNTIME FILES
+# ============================================================================
+
+# Application logs
+*.log
+logs/
+log/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# ============================================================================
+# AZURE SPECIFIC
+# ============================================================================
+
+# Azure Functions
+bin
+obj
+appsettings.json
+local.settings.json
+.azure/
+
+# Azure CLI
+.azure-cli/
+
+# ============================================================================
+# WEB ASSETS (if you add them later)
+# ============================================================================
+
+# Node modules (if you add frontend build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sass
+.sass-cache/
+
+# Webpack
+webpack-stats.json
+
+# ============================================================================
+# DATABASE FILES (if you add local databases)
+# ============================================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# BACKUP AND ARCHIVE FILES
+# ============================================================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.zip
+*.tar.gz
+*.rar
+
+# ============================================================================
+# SECURITY SCAN RESULTS
+# ============================================================================
+
+# Security scan reports
+security-report.json
+vulnerability-report.html
+.snyk
+
+# ============================================================================
+# CUSTOM PROJECT IGNORES
+# ============================================================================
+
+# Add any project-specific files to ignore here
+# Example:
+# custom-config.json
+# local-overrides/

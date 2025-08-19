@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Error - Azure AI Foundry AgentCarRepair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error-container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            color: #f44336;
+            margin-bottom: 20px;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .error-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .error-details {
+            background: #ffebee;
+            border: 1px solid #ffcdd2;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .error-details h3 {
+            color: #c62828;
+            margin-bottom: 15px;
+        }
+
+        .error-details p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .env-example {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            white-space: pre-line;
+            margin-top: 15px;
+        }
+
+        .instructions {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .instructions h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .refresh-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
+        .refresh-button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">⚠️</div>
+        <h1 class="error-title">{{ error }}</h1>
+        <p class="error-subtitle">Configuration Required</p>
+        
+        <div class="error-details">
+            <h3>Problem:</h3>
+            <p>{{ details }}</p>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to Fix:</h3>
+            <ol>
+                <li>Create a <code>.env</code> file in the same directory as the application</li>
+                <li>Add the following environment variables to the .env file:</li>
+                <div class="env-example">AZURE_SUBSCRIPTION_ID=your-subscription-id
+AZURE_RESOURCE_GROUP=your-resource-group-name
+AZURE_PROJECT_NAME=your-project-name
+AZURE_ENDPOINT=https://your-endpoint.services.ai.azure.com/api/projects/your-project
+AZURE_CLIENT_ID=your-service-principal-client-id
+AZURE_CLIENT_SECRET=your-service-principal-secret
+AZURE_TENANT_ID=your-azure-tenant-id
+AZURE_AGENT_ID=your-agent-id
+FLASK_SECRET_KEY=your-secret-key-for-sessions</div>
+                <li>Replace the placeholder values with your actual Azure credentials</li>
+                <li>Ensure your service principal has the required permissions:
+                    <ul>
+                        <li>Cognitive Services Contributor</li>
+                        <li>Reader role on the resource group</li>
+                    </ul>
+                </li>
+                <li>Restart the application</li>
+            </ol>
+        </div>
+        
+        <button class="refresh-button" onclick="location.reload()">
+            🔄 Refresh Page
+        </button>
+    </div>
+</body>
+</html>
