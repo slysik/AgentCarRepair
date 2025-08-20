@@ -22,7 +22,7 @@ This application serves as a web frontend for Azure AI Foundry agent services, s
 - Download Free Car Manuals here: https://www.allcarmanuals.com/makesmodels.html
 
 ### Azure Requirements
-- [Azure Data Lake Storage (ADLS Gen2)] (https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account) to upload your car manuals
+- [Azure Data Lake Storage (ADLS Gen2)](https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account) to upload your car manuals
 - [Azure AI Search] (https://learn.microsoft.com/en-us/azure/search/search-get-started-portal) to index the manuals
 - Azure subscription with [AI Foundry project] (https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry&pivots=fdp-project)
 - [Azure AI agent] (https://learn.microsoft.com/en-us/azure/ai-foundry/agents/quickstart?pivots=ai-foundry-portal) configured for car repair assistance and add the [Azure AI Search Index as Knowledge] (https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/azure-ai-search?tabs=azurecli#add-the-azure-ai-search-tool-to-an-agent) for your agent
