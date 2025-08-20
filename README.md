@@ -19,7 +19,7 @@ This application serves as a web frontend for Azure AI Foundry agent services, s
 ## 🛠️ Prerequisites
 
 ### Car Repair Manuals
-- Download Free Car Manuals here: https://www.allcarmanuals.com/makesmodels.html
+- Download Free Car Manuals [here](https://www.allcarmanuals.com/makesmodels.html)
 
 ### Tools
 - [VS Code] (https://code.visualstudio.com/download)
