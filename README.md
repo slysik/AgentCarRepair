@@ -22,7 +22,7 @@ This application serves as a web frontend for Azure AI Foundry agent services, s
 - Download Free Car Manuals [here](https://www.allcarmanuals.com/makesmodels.html)
 
 ### Tools
-- [VS Code] (https://code.visualstudio.com/download)
+- [VS Code](https://code.visualstudio.com/download)
 
 ### Azure Requirements
 - [Azure Data Lake Storage (ADLS Gen2)](https://learn.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account) to upload your car manuals
