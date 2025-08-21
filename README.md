@@ -29,7 +29,7 @@ This application serves as a web frontend for Azure AI Foundry agent services, s
 - [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-get-started-portal) to index the manuals
 - Azure subscription with [AI Foundry project](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry&pivots=fdp-project)
 - [Azure AI agent](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/quickstart?pivots=ai-foundry-portal) configured for car repair assistance and add the [Azure AI Search Index as Knowledge](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/azure-ai-search?tabs=azurecli#add-the-azure-ai-search-tool-to-an-agent) for your agent
-- [Service principal](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry?pivots=fdp-project) with appropriate permissions
+- [Service principal](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal) with appropriate [role permissions]((https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry?pivots=fdp-project)) on your foundry Resource/projects.
 
 ### System Requirements
 - Python 3.8 or higher
@@ -38,8 +38,8 @@ This application serves as a web frontend for Azure AI Foundry agent services, s
 
 ### Required Permissions
 Your service principal needs the following Azure roles:
-- `Cognitive Services Contributor` on the AI Foundry project
-- `Reader` role on the resource group
+- Cognitive Services Contributor role on the AI Foundry project resource
+- Reader role on the resource group. The resource group is available in the overview page in Azure AI Foundry for your project 
 
 ## 📦 Installation
 
@@ -88,19 +88,10 @@ FLASK_DEBUG=False
 
 ### Getting Azure Credentials
 
-1. **Create Service Principal**:
-   ```bash
-   az ad sp create-for-rbac --name "AgentCarRepair" --role "Cognitive Services Contributor"
-   ```
-
-2. **Get AI Foundry Project Details**:
+**Get AI Foundry Project Details**:
    - Navigate to your Azure AI Foundry project
    - Copy the endpoint URL from the project overview
    - Note your agent ID from the agents section
-
-3. **Set Permissions**:
-   - Assign `Cognitive Services Contributor` role to your service principal
-   - Ensure access to the AI Foundry project resources
 
 ## 🚀 Running the Application
 
@@ -108,18 +99,6 @@ FLASK_DEBUG=False
 ```bash
 python AgentRepair.py
 ```
-
-### Production Mode
-```bash
-# Using Gunicorn (Linux/macOS)
-gunicorn -w 4 -b 0.0.0.0:5000 AgentRepair:app
-
-# Using Waitress (Windows/Cross-platform)
-waitress-serve --host=0.0.0.0 --port=5000 AgentRepair:app
-```
-
-The application will be available at: `http://localhost:5000`
-
 ## 📱 Usage
 
 ### Web Interface
@@ -141,6 +120,12 @@ Content-Type: application/json
 {
   "message": "My car won't start, what should I check?"
 }
+
+or
+
+curl -X POST http://localhost:5000/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message": "My car won'\''t start, what should I check?"}'
 ```
 
 #### Status Check
@@ -216,74 +201,6 @@ Check console output for detailed error messages and system status.
 - Use Azure Key Vault for production secrets
 - Rotate service principal credentials regularly
 
-### Network Security
-- Use HTTPS in production deployments
-- Configure firewall rules appropriately
-- Consider VPN or private endpoints for sensitive deployments
-
-### Application Security
-- Keep all dependencies updated
-- Use strong Flask secret keys
-- Implement rate limiting for production use
-
-## 🚀 Production Deployment
-
-### Azure App Service
-1. Create Azure App Service instance
-2. Configure application settings (environment variables)
-3. Deploy code using Git or ZIP deployment
-4. Configure custom domain and SSL
-
-### Docker Deployment
-```dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements-agentrepair.txt .
-RUN pip install -r requirements-agentrepair.txt
-COPY . .
-EXPOSE 5000
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "AgentRepair:app"]
-```
-
-### Environment-Specific Configuration
-- Use separate service principals for dev/staging/production
-- Configure different agent IDs for different environments
-- Use Azure Application Insights for monitoring
-
-## 📊 Monitoring and Maintenance
-
-### Health Checks
-- Use `/api/status` endpoint for health monitoring
-- Monitor Azure AI Foundry service quotas and usage
-- Set up alerts for authentication failures
-
-### Performance Monitoring
-- Monitor response times and error rates
-- Track Azure AI service usage and costs
-- Use Application Insights for detailed telemetry
-
-### Updates and Maintenance
-- Regularly update Python dependencies
-- Monitor Azure AI Foundry service updates
-- Test application functionality after updates
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on:
-- How to set up your development environment
-- Coding standards and best practices  
-- How to submit pull requests
-- Issue reporting guidelines
-
-### Quick Contributing Steps
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes with proper documentation
-4. Test thoroughly
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -292,42 +209,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Getting Help
 - **📖 Documentation**: Check [README.md](README.md) and [DOCUMENTATION.md](DOCUMENTATION.md)
-- **🐛 Bug Reports**: Use our [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md)
-- **💡 Feature Requests**: Use our [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md)
-- **❓ Questions**: Use our [Configuration Help Template](.github/ISSUE_TEMPLATE/configuration_help.md)
-- **💬 Discussions**: Join our [GitHub Discussions](https://github.com/yourusername/AgentCarRepair/discussions)
-
-### Community
-- ⭐ Star this repository if you find it helpful
-- 🐛 Report bugs and issues
-- 💡 Suggest new features
-- 📖 Improve documentation
-- 🔧 Submit pull requests
-
-## 📊 Project Status
-
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/yourusername/AgentCarRepair)
-![GitHub](https://img.shields.io/github/license/yourusername/AgentCarRepair)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/AgentCarRepair)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/AgentCarRepair)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/AgentCarRepair)
-
-### Build Status
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yourusername/AgentCarRepair/AgentCarRepair%20CI/CD%20Pipeline)
 
 ## 📚 Additional Resources
 
 - [Azure AI Foundry Documentation](https://docs.microsoft.com/en-us/azure/ai-foundry/)
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Azure Identity Library](https://docs.microsoft.com/en-us/python/api/azure-identity/)
-- [Azure AI Projects SDK](https://docs.microsoft.com/en-us/python/api/azure-ai-projects/)
-- [Project Changelog](CHANGELOG.md)
-
-## 🔄 Version History
-
-See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes, features, and fixes.
+- [Azure AI Projects SDK](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview?pivots=programming-language-python)
 
 ---
 
-**Last Updated**: August 19, 2025  
+**Last Updated**: August 20, 2025  
 **Version**: 1.0.0
