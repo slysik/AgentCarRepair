@@ -15,6 +15,8 @@ This document provides a quick reference to all the documentation and setup reso
 | **run_agentrepair.bat** | Windows batch launcher with docs | Windows users |
 | **run_agentrepair.ps1** | PowerShell launcher with docs | Windows PowerShell users |
 | **AgentRepair.py** | Main application with inline docs | Developers |
+| **foundryResourceExplorer.py** | Azure AI Foundry Resource Explorer | Developers |
+
 
 ## 🚀 Quick Start Guide
 
