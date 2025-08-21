@@ -6,6 +6,9 @@ A Flask-based web application that provides an interactive chat interface for ca
 
 This application serves as a web frontend for Azure AI Foundry agent services, specifically designed for automotive troubleshooting and repair guidance. Users can engage in conversational interactions with AI agents that help diagnose car problems, provide repair instructions, and offer automotive advice.
 
+![Complete App](RepairAgent-Screenshot.png)
+
+
 ## ✨ Features
 
 - **Interactive Chat Interface**: Modern, responsive web UI for seamless conversations
