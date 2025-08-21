@@ -147,20 +147,7 @@ POST /api/new-conversation
 - **Message Formatting**: Converts agent responses to HTML
 - **Error Handling**: Provides user-friendly error messages
 
-### File Structure
 ```
-AgentCarRepair/
-├── AgentRepair.py              # Main application file
-├── requirements-agentrepair.txt # Python dependencies
-├── README.md                   # This documentation
-├── .env                        # Environment variables (create this)
-├── templates/
-│   ├── chat.html              # Main chat interface
-│   └── error.html             # Error page template
-├── run_agentrepair.bat        # Windows batch file
-└── run_agentrepair.ps1        # PowerShell script
-```
-
 ## 🐛 Troubleshooting
 
 ### Common Issues
@@ -204,11 +191,6 @@ Check console output for detailed error messages and system status.
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-### Getting Help
-- **📖 Documentation**: Check [README.md](README.md) and [DOCUMENTATION.md](DOCUMENTATION.md)
 
 ## 📚 Additional Resources
 

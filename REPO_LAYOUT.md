@@ -28,6 +28,7 @@ AgentCarRepair/
 │   ├── README.md                     # Primary documentation
 │   ├── DOCUMENTATION.md              # Quick reference guide
 │   ├── REPO_LAYOUT.md                # Quick reference guide
+│   ├── ARCHITECTURE.md               # Solution Architecture
 │   └── LICENSE                       # MIT License
 
 │
@@ -49,6 +50,7 @@ AgentCarRepair/
 - [x] **README.md** - Comprehensive setup and usage guide
 - [x] **DOCUMENTATION.md** - Quick reference guide
 - [x] **REPO_LAYOUT.md** - Repo Layout reference guide
+- [x] **ARCHITECTURE.md** - Solution Architecture
 - [x] **LICENSE** - MIT License for open source
 
 ---

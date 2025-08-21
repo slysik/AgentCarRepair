@@ -8,7 +8,7 @@ This document provides a quick reference to all the documentation and setup reso
 
 | File | Purpose | Target Audience |
 |------|---------|----------------|
-| **README.md** | Complete application documentation | Developers, users, administrators |
+| **README.md/REPO_LAYOUT.md/DOCUMENTATION.md/ARCHITECTURE.md** | Complete application documentation | Developers, users, administrators |
 | **.env.template** | Environment configuration template | Setup/deployment teams |
 | **requirements-agentrepair.txt** | Python dependencies with explanations | Developers, DevOps |
 | **setup.py** | Automated setup and validation script | End users, quick setup |
