@@ -22,7 +22,7 @@ AgentCarRepair/
 │       └── error.html                # Error page template
 │
 ├── 🔧 Development Tools
-│   └── test_autogen.py               # Azure resource explorer
+│   └── foundryResourceExplorer.py               # Azure resource explorer
 │
 ├── 📚 Documentation
 │   ├── README.md                     # Primary documentation

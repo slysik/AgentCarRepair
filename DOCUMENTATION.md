@@ -66,7 +66,7 @@ AgentCarRepair Application
 └── Support Tools
     ├── Setup Script (setup.py)
     ├── Launchers (*.bat, *.ps1)
-    └── Resource Explorer (test_autogen.py)
+    └── Resource Explorer (foundryResourceExplorer.py)
 ```
 
 ## 📋 API Reference
@@ -133,7 +133,7 @@ python AgentRepair.py
 ### Debug Tools
 - **setup.py** - Comprehensive system validation
 - **GET /api/status** - Runtime health check
-- **test_autogen.py** - Azure resource exploration
+- **foundryResourceExplorer.py** - Azure resource exploration
 - **FLASK_DEBUG=True** - Detailed error output
 
 ## 📞 Support Resources
@@ -153,7 +153,7 @@ python setup.py
 .\run_agentrepair.ps1 --help
 
 # Resource exploration
-python test_autogen.py --help
+python foundryResourceExplorer.py --help
 
 # Application status
 curl http://localhost:5000/api/status
