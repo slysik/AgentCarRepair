@@ -1,6 +1,8 @@
 # AgentCarRepair Application Architecture
 
+![Solution Architecture](RepairAgent-SolutionArchitecture.png)
 
+--- 
 
 ## 🏗️ System Architecture Overview
 
