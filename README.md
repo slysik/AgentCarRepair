@@ -191,10 +191,6 @@ Check console output for detailed error messages and system status.
 - Use Azure Key Vault for production secrets
 - Rotate service principal credentials regularly
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📚 Additional Resources
 
 - [Azure AI Foundry Documentation](https://docs.microsoft.com/en-us/azure/ai-foundry/)
