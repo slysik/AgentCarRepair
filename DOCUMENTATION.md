@@ -119,17 +119,6 @@ FLASK_DEBUG=True
 python AgentRepair.py
 ```
 
-### 3. Production Deployment
-```bash
-# Production WSGI server
-pip install gunicorn  # Linux/macOS
-pip install waitress  # Windows
-
-# Run with production server
-gunicorn -w 4 -b 0.0.0.0:5000 AgentRepair:app  # Linux/macOS
-waitress-serve --host=0.0.0.0 --port=5000 AgentRepair:app  # Windows
-```
-
 ## 🔍 Troubleshooting Quick Reference
 
 ### Common Issues
@@ -182,16 +171,9 @@ curl http://localhost:5000/api/status
 1. Study AgentRepair.py for implementation details
 2. Review API endpoints and data flow
 3. Understand Azure integration patterns
-4. Contribute improvements via proper documentation
-
-### For Administrators
-1. Review security considerations in README.md
-2. Set up production deployment
-3. Configure monitoring and logging
-4. Establish backup and maintenance procedures
 
 ---
 
-**Last Updated**: August 19, 2025  
+**Last Updated**: August 20, 2025  
 **Version**: 1.0.0  
 **Compatibility**: Python 3.8+, Azure AI Foundry, Windows/macOS/Linux
