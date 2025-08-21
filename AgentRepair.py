@@ -37,7 +37,7 @@ Usage:
 
 The application will start a web server on http://localhost:5000
 
-Author: Your Name
+Author: James Morantus
 Date: August 19, 2025
 Version: 1.0.0
 License: MIT
