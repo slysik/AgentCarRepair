@@ -36,7 +36,7 @@ AgentCarRepair/
 
 ```
 
-## ✅ Repository Readiness Checklist
+## ✅ Repository Checklist
 
 ### 🔧 Core Application
 - [x] **Main Application** (`AgentRepair.py`) - Fully documented with type hints
@@ -50,23 +50,6 @@ AgentCarRepair/
 - [x] **DOCUMENTATION.md** - Quick reference guide
 - [x] **REPO_LAYOUT.md** - Repo Layout reference guide
 - [x] **LICENSE** - MIT License for open source
-
-
-
-
-### 2. Repository Settings
-- **Repository Name**: `AgentCarRepair`
-- **Description**: "Flask web application for car repair assistance using Azure AI Foundry agents"
-- **Topics**: `azure-ai`, `flask`, `python`, `web-application`, `chatbot`, `car-repair`, `automotive`, `ai-foundry`
-- **License**: MIT License
-- **Default Branch**: `main`
-
-### 4. Branch Protection Rules
-Recommended settings for `main` branch:
-- Require pull request reviews before merging
-- Require status checks to pass before merging
-- Require up-to-date branches before merging
-- Include administrators in restrictions
 
 ---
 
