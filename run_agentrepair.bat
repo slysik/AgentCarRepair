@@ -1,8 +1,8 @@
 @echo off
 REM ============================================================================
-REM Azure AI Foundry AgentCarRepair Web Application - Windows Batch Launcher
+REM AI Car Repair Assistant Web Application - Windows Batch Launcher
 REM 
-REM This batch file provides an easy way to start the AgentCarRepair application
+REM This batch file provides an easy way to start the AI Car Repair Assistant
 REM on Windows systems. It performs the following tasks:
 REM 1. Validates Python installation
 REM 2. Installs required dependencies
@@ -12,7 +12,7 @@ REM
 REM Requirements:
 REM - Python 3.8 or higher installed and in PATH
 REM - pip package manager available
-REM - .env file with Azure credentials (optional for startup)
+REM - .env file with OpenAI API key (optional for startup)
 REM
 REM Usage:
 REM   Double-click this file or run from command prompt: run_agentrepair.bat
@@ -21,8 +21,8 @@ REM The application will be available at: http://localhost:5000
 REM ============================================================================
 
 echo ============================================
-echo 🚗 Azure AI Foundry AgentCarRepair 
-echo    Car Repair Assistant Web Application
+echo 🚗 AI Car Repair Assistant
+echo    OpenAI-Powered Automotive Help
 echo ============================================
 echo.
 echo 📅 Started at: %date% %time%
@@ -67,7 +67,7 @@ if not exist .env (
     echo.
     echo 📝 Environment setup needed:
     echo    1. Copy .env.template to .env
-    echo    2. Fill in your Azure credentials
+    echo    2. Add your OpenAI API key
     echo    3. See README.md for detailed instructions
     echo.
     echo 💡 The application will start but may show configuration errors
@@ -80,7 +80,8 @@ if not exist .env (
 echo.
 echo 🚀 Step 4: Starting web application...
 echo.
-echo 🌐 Web application will be available at: http://localhost:5000
+echo 🌐 Landing page: http://localhost:5000
+echo 💬 Chat interface: http://localhost:5000/chat
 echo 🛑 Press Ctrl+C to stop the server
 echo 📖 Check README.md for usage instructions
 echo.
@@ -100,6 +101,7 @@ echo.
 echo 💡 Tips:
 echo    - If you encountered errors, check the output above
 echo    - For configuration help, see README.md
+echo    - Get OpenAI API key at: https://platform.openai.com/api-keys
 echo    - For troubleshooting, visit the /api/status endpoint
 echo.
 

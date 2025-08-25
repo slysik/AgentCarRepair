@@ -1,35 +1,29 @@
 #!/usr/bin/env python3
 """
-Azure AI Foundry AgentCarRepair Web Application
+AI Car Repair Assistant Web Application
 
 A Flask-based web application that provides an interactive chat interface to communicate
-with Azure AI Foundry agents specifically designed for car repair assistance and troubleshooting.
+with OpenAI's GPT models specifically designed for car repair assistance and troubleshooting.
 
-This application serves as a web frontend for Azure AI Foundry agent services, allowing users
-to engage in conversational interactions with AI agents that can help diagnose car problems,
+This application serves as a web frontend for OpenAI API, allowing users
+to engage in conversational interactions with AI that can help diagnose car problems,
 provide repair guidance, and offer automotive advice.
 
 Key Features:
     - Web-based chat interface for car repair assistance
-    - Integration with Azure AI Foundry agent services
+    - Integration with OpenAI API
     - Session management for maintaining conversation context
     - Real-time message formatting with HTML support
     - Status monitoring and health checks
-    - Environment configuration validation
+    - Modern landing page with responsive design
     - Responsive design for desktop and mobile devices
 
 Prerequisites:
     - Python 3.8 or higher
-    - Azure subscription with AI Foundry project
-    - Service principal with appropriate permissions
-    - Azure AI agent configured for car repair assistance
+    - OpenAI API key
 
 Environment Variables Required:
-    - AZURE_CLIENT_ID: Service principal client ID
-    - AZURE_CLIENT_SECRET: Service principal secret
-    - AZURE_TENANT_ID: Azure tenant ID
-    - AZURE_ENDPOINT: Azure AI Foundry project endpoint
-    - AZURE_AGENT_ID: ID of the car repair agent
+    - OPENAI_API_KEY: Your OpenAI API key
     - FLASK_SECRET_KEY: Secret key for Flask sessions (optional)
 
 Usage:
@@ -38,8 +32,8 @@ Usage:
 The application will start a web server on http://localhost:5000
 
 Author: James Morantus
-Date: August 20, 2025
-Version: 1.0.0
+Date: August 22, 2025
+Version: 2.0.0
 License: MIT
 """
 
@@ -52,10 +46,9 @@ from typing import Optional, Tuple, List, Dict, Any
 # Flask web framework imports
 from flask import Flask, render_template, request, jsonify, session
 
-# Azure AI and authentication imports
-from azure.ai.projects import AIProjectClient
-from azure.identity import DefaultAzureCredential, ClientSecretCredential
-from azure.ai.agents.models import ListSortOrder
+# OpenAI imports
+import openai
+from openai import OpenAI
 
 # Environment variable management (optional dependency)
 try:
@@ -154,80 +147,75 @@ def format_message_content(text: str) -> str:
     
     return formatted_text
 
-def create_credential(debug: bool = False) -> DefaultAzureCredential | ClientSecretCredential:
+def get_openai_client() -> OpenAI:
     """
-    Create Azure credential for authentication with Azure AI Foundry services.
+    Create and return an OpenAI client instance.
     
-    This function attempts to create the appropriate Azure credential based on
-    available environment variables. It first tries to use service principal
-    authentication (recommended for production), and falls back to default
-    Azure credential chain if service principal credentials are not available.
+    This function creates a client for interacting with OpenAI API services.
+    The client is configured with the API key from environment variables.
     
-    The default credential chain tries multiple authentication methods in order:
-    1. Environment variables (AZURE_CLIENT_ID, AZURE_CLIENT_SECRET, AZURE_TENANT_ID)
-    2. Managed Identity (if running on Azure)
-    3. Azure CLI credentials (if logged in via az login)
-    4. Visual Studio Code credentials
-    5. Azure PowerShell credentials
+    Returns:
+        OpenAI: Configured OpenAI client for making API calls
+        
+    Raises:
+        ValueError: If OPENAI_API_KEY environment variable is not set
+        
+    Example:
+        client = get_openai_client()
+    """
+    api_key = os.getenv('OPENAI_API_KEY')
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY environment variable is required")
+    
+    return OpenAI(api_key=api_key)
+
+def create_car_repair_prompt(user_message: str, conversation_history: List[Dict[str, str]] = None) -> List[Dict[str, str]]:
+    """
+    Create a prompt for the OpenAI API with car repair context.
+    
+    This function creates a conversation prompt that includes system instructions
+    for car repair assistance and the user's message history.
     
     Args:
-        debug (bool): If True, prints authentication method being used
-        
-    Returns:
-        DefaultAzureCredential | ClientSecretCredential: Configured Azure credential object
-        
-    Raises:
-        ValueError: If no valid authentication method is available
-        
-    Example:
-        credential = create_credential(debug=True)
-    """
-    # Try service principal first
-    client_id = os.getenv('AZURE_CLIENT_ID')
-    client_secret = os.getenv('AZURE_CLIENT_SECRET')
-    tenant_id = os.getenv('AZURE_TENANT_ID')
+        user_message (str): The user's current message
+        conversation_history (List[Dict[str, str]]): Previous conversation messages
     
-    if all([client_id, client_secret, tenant_id]):
-        if debug:
-            print("🔐 Using service principal authentication")
-        
-        return ClientSecretCredential(
-            tenant_id=tenant_id,
-            client_id=client_id,
-            client_secret=client_secret
-        )
-    else:
-        if debug:
-            print("🔐 Using default Azure credential")
-        
-        return DefaultAzureCredential()
+    Returns:
+        List[Dict[str, str]]: Formatted messages for OpenAI API
+    """
+    system_message = {
+        "role": "system",
+        "content": """You are an expert automotive mechanic and car repair assistant. Your role is to help users diagnose car problems, provide repair guidance, and offer automotive advice. 
 
-def get_project_client() -> AIProjectClient:
-    """
-    Create and return an Azure AI Project client instance.
+Guidelines:
+- Always prioritize safety first
+- Provide step-by-step instructions when appropriate
+- Explain technical terms in simple language
+- Suggest when professional help is needed
+- Ask clarifying questions to better diagnose issues
+- Provide cost estimates when possible
+- Cover all car makes and models
+- Include both DIY solutions and professional repair options
+
+When responding:
+1. Acknowledge the user's problem
+2. Ask clarifying questions if needed
+3. Provide possible diagnoses
+4. Suggest troubleshooting steps
+5. Recommend next actions (DIY or professional)
+6. Include safety warnings when relevant"""
+    }
     
-    This function creates a client for interacting with Azure AI Foundry project services.
-    The client is configured with the appropriate credentials and endpoint URL.
+    messages = [system_message]
     
-    Returns:
-        AIProjectClient: Configured AI Project client for making API calls
-        
-    Raises:
-        ValueError: If AZURE_ENDPOINT environment variable is not set
-        azure.core.exceptions.ClientAuthenticationError: If authentication fails
-        
-    Example:
-        project_client = get_project_client()
-        agents = project_client.agents.list()
-    """
-    endpoint = os.getenv('AZURE_ENDPOINT')
-    if not endpoint:
-        raise ValueError("AZURE_ENDPOINT environment variable is required")
+    # Add conversation history if available
+    if conversation_history:
+        messages.extend(conversation_history)
     
-    return AIProjectClient(
-        credential=create_credential(),
-        endpoint=endpoint
-    )
+    # Add current user message
+    messages.append({"role": "user", "content": user_message})
+    
+    return messages
 
 def validate_environment() -> Tuple[bool, List[str]]:
     """
@@ -238,11 +226,7 @@ def validate_environment() -> Tuple[bool, List[str]]:
     startup and can be used for health checks.
     
     Required environment variables:
-        - AZURE_CLIENT_ID: Service principal client ID
-        - AZURE_CLIENT_SECRET: Service principal secret
-        - AZURE_TENANT_ID: Azure tenant ID
-        - AZURE_ENDPOINT: Azure AI Foundry project endpoint URL
-        - AZURE_AGENT_ID: ID of the car repair agent to use
+        - OPENAI_API_KEY: OpenAI API key for accessing GPT models
     
     Returns:
         Tuple[bool, List[str]]: A tuple containing:
@@ -254,7 +238,7 @@ def validate_environment() -> Tuple[bool, List[str]]:
         if not is_valid:
             print(f"Missing variables: {missing}")
     """
-    required_vars = ['AZURE_CLIENT_ID', 'AZURE_CLIENT_SECRET', 'AZURE_TENANT_ID', 'AZURE_ENDPOINT', 'AZURE_AGENT_ID']
+    required_vars = ['OPENAI_API_KEY']
     missing_vars = [var for var in required_vars if not os.getenv(var)]
     
     if missing_vars:
@@ -264,12 +248,27 @@ def validate_environment() -> Tuple[bool, List[str]]:
 @app.route('/')
 def index():
     """
-    Render the main chat interface page.
+    Render the landing page.
     
-    This is the primary endpoint for the web application. It validates the
-    environment configuration before rendering the chat interface. If any
-    required environment variables are missing, it displays an error page
-    with instructions for proper configuration.
+    This is the primary endpoint for the web application showing the
+    modern landing page with features and call-to-action.
+    
+    Returns:
+        str: Rendered HTML template (landing.html)
+        
+    HTTP Status Codes:
+        200: Success - landing page loaded
+    """
+    return render_template('landing.html')
+
+@app.route('/chat')
+def chat_page():
+    """
+    Render the chat interface page.
+    
+    This endpoint validates the environment configuration before rendering 
+    the chat interface. If any required environment variables are missing, 
+    it displays an error page with instructions for proper configuration.
     
     Returns:
         str: Rendered HTML template (either chat.html or error.html)
@@ -290,11 +289,11 @@ def index():
 @app.route('/api/chat', methods=['POST'])
 def chat():
     """
-    Handle chat messages with the AI agent.
+    Handle chat messages with the OpenAI API.
     
-    This endpoint processes user messages and communicates with the Azure AI Foundry
-    agent to generate responses. It manages conversation threads, maintains session
-    state, and formats responses for display in the web interface.
+    This endpoint processes user messages and communicates with OpenAI's GPT models
+    to generate car repair assistance responses. It maintains conversation history
+    in the session and formats responses for display in the web interface.
     
     Request Format:
         POST /api/chat
@@ -304,8 +303,8 @@ def chat():
     Response Format:
         Success (200): {
             "response": "formatted HTML response",
-            "raw_response": "original agent response",
-            "thread_id": "conversation thread ID",
+            "raw_response": "original AI response",
+            "conversation_id": "conversation session ID",
             "timestamp": "ISO format timestamp"
         }
         Error (400/500): {
@@ -313,17 +312,16 @@ def chat():
         }
     
     Session Management:
-        - Creates new conversation threads as needed
-        - Maintains thread ID in Flask session
-        - Handles thread persistence across requests
+        - Maintains conversation history in Flask session
+        - Stores up to last 10 messages for context
     
     Returns:
-        Response: JSON response with agent reply or error details
+        Response: JSON response with AI reply or error details
         
     HTTP Status Codes:
-        200: Success - agent responded
+        200: Success - AI responded
         400: Bad Request - empty message
-        500: Server Error - Azure API issues, agent failures, etc.
+        500: Server Error - OpenAI API issues
     """
     try:
         data = request.get_json()
@@ -332,75 +330,60 @@ def chat():
         if not user_message:
             return jsonify({'error': 'Message cannot be empty'}), 400
         
-        # Get or create project client
-        project = get_project_client()
+        # Get or create OpenAI client
+        try:
+            client = get_openai_client()
+        except ValueError as e:
+            return jsonify({'error': str(e)}), 500
         
-        # Get agent ID from environment variable
-        agent_id = os.getenv('AZURE_AGENT_ID')
-        if not agent_id:
-            return jsonify({'error': 'AZURE_AGENT_ID environment variable is required'}), 500
+        # Get conversation history from session (limit to last 10 messages)
+        conversation_history = session.get('conversation_history', [])
         
-
+        # Create prompt with conversation context
+        messages = create_car_repair_prompt(user_message, conversation_history[-10:])
         
         try:
-            agent = project.agents.get_agent(agent_id)
-        except Exception as e:
-            return jsonify({'error': f'Failed to get agent: {str(e)}'}), 500
-        
-        # Create or get thread from session
-        thread_id = session.get('thread_id')
-        if not thread_id:
-            try:
-                thread = project.agents.threads.create()
-                thread_id = thread.id
-                session['thread_id'] = thread_id
-            except Exception as e:
-                return jsonify({'error': f'Failed to create thread: {str(e)}'}), 500
-        
-        # Create user message
-        try:
-            message = project.agents.messages.create(
-                thread_id=thread_id,
-                role="user",
-                content=user_message
+            # Call OpenAI API
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",  # Using GPT-4o-mini for cost efficiency
+                messages=messages,
+                max_tokens=1000,
+                temperature=0.7
             )
-        except Exception as e:
-            return jsonify({'error': f'Failed to create message: {str(e)}'}), 500
-        
-        # Process the run
-        try:
-            run = project.agents.runs.create_and_process(
-                thread_id=thread_id,
-                agent_id=agent.id
-            )
-        except Exception as e:
-            return jsonify({'error': f'Failed to process run: {str(e)}'}), 500
-        
-        if run.status == "failed":
-            return jsonify({'error': f'Agent run failed: {run.last_error}'}), 500
-        
-        # Get messages
-        try:
-            messages = project.agents.messages.list(thread_id=thread_id, order=ListSortOrder.DESCENDING)
             
-            # Get the latest assistant message (first one since we're using DESCENDING order)
-            assistant_response = ""
-            raw_response = ""
-            for message in messages:
-                if message.role == "assistant" and message.text_messages:
-                    raw_response = message.text_messages[-1].text.value
-                    assistant_response = format_message_content(raw_response)
-                    break
+            # Extract the assistant's response
+            raw_response = response.choices[0].message.content
+            formatted_response = format_message_content(raw_response)
+            
+            # Update conversation history in session
+            conversation_history.append({"role": "user", "content": user_message})
+            conversation_history.append({"role": "assistant", "content": raw_response})
+            
+            # Keep only last 20 messages (10 exchanges) to manage session size
+            if len(conversation_history) > 20:
+                conversation_history = conversation_history[-20:]
+            
+            session['conversation_history'] = conversation_history
+            
+            # Generate or get conversation ID
+            conversation_id = session.get('conversation_id')
+            if not conversation_id:
+                conversation_id = f"conv_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+                session['conversation_id'] = conversation_id
             
             return jsonify({
-                'response': assistant_response,
+                'response': formatted_response,
                 'raw_response': raw_response,
-                'thread_id': thread_id,
+                'conversation_id': conversation_id,
                 'timestamp': datetime.now().isoformat()
             })
             
+        except openai.RateLimitError:
+            return jsonify({'error': 'API rate limit exceeded. Please try again later.'}), 429
+        except openai.APIError as e:
+            return jsonify({'error': f'OpenAI API error: {str(e)}'}), 500
         except Exception as e:
-            return jsonify({'error': f'Failed to get messages: {str(e)}'}), 500
+            return jsonify({'error': f'Failed to get AI response: {str(e)}'}), 500
         
     except Exception as e:
         return jsonify({'error': f'Unexpected error: {str(e)}'}), 500
@@ -408,11 +391,11 @@ def chat():
 @app.route('/api/new-conversation', methods=['POST'])
 def new_conversation():
     """
-    Start a new conversation by clearing the current thread.
+    Start a new conversation by clearing the conversation history.
     
     This endpoint allows users to start fresh conversations by removing
-    the thread ID from the session. The next message will create a new
-    conversation thread with the AI agent.
+    the conversation history from the session. The next message will start
+    a new conversation context.
     
     Request Format:
         POST /api/new-conversation
@@ -428,7 +411,8 @@ def new_conversation():
     HTTP Status Codes:
         200: Success - session cleared
     """
-    session.pop('thread_id', None)
+    session.pop('conversation_history', None)
+    session.pop('conversation_id', None)
     return jsonify({'message': 'New conversation started'})
 
 @app.route('/api/status')
@@ -437,22 +421,21 @@ def status():
     Check system status and configuration.
     
     This endpoint provides health check functionality and system status information.
-    It validates environment configuration, tests Azure connectivity, and returns
+    It validates environment configuration, tests OpenAI API connectivity, and returns
     diagnostic information useful for troubleshooting.
     
     The endpoint performs the following checks:
     1. Environment variable validation
-    2. Azure authentication test
-    3. Agent connectivity verification
-    4. Session state information
+    2. OpenAI API connectivity test
+    3. Session state information
     
     Response Format:
         Success (200): {
             "status": "ok",
             "message": "Connected successfully",
-            "agent_id": "agent-id-string",
-            "endpoint": "azure-endpoint-url",
-            "thread_id": "current-thread-id-or-none"
+            "model": "gpt-4o-mini",
+            "conversation_id": "current-conversation-id-or-none",
+            "messages_count": number_of_messages_in_history
         }
         Error (400/500): {
             "status": "error",
@@ -465,7 +448,7 @@ def status():
     HTTP Status Codes:
         200: Success - all systems operational
         400: Client Error - missing configuration
-        500: Server Error - Azure connectivity issues
+        500: Server Error - OpenAI API connectivity issues
     """
     try:
         is_valid, missing_vars = validate_environment()
@@ -476,30 +459,41 @@ def status():
                 'message': f'Missing environment variables: {", ".join(missing_vars)}'
             }), 400
         
-        # Test connection to Azure
+        # Test connection to OpenAI API
         try:
-            project = get_project_client()
-            agent_id = os.getenv('AZURE_AGENT_ID')
-            if not agent_id:
-                return jsonify({
-                    'status': 'error',
-                    'message': 'AZURE_AGENT_ID environment variable is missing'
-                }), 400
+            client = get_openai_client()
             
-            agent = project.agents.get_agent(agent_id)
+            # Test API with a simple request
+            test_response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": "Test connection"}],
+                max_tokens=10
+            )
+            
+            conversation_history = session.get('conversation_history', [])
             
             return jsonify({
                 'status': 'ok',
                 'message': 'Connected successfully',
-                'agent_id': agent.id,
-                'endpoint': os.getenv('AZURE_ENDPOINT', 'not-set'),
-                'thread_id': session.get('thread_id', 'none')
+                'model': 'gpt-4o-mini',
+                'conversation_id': session.get('conversation_id', 'none'),
+                'messages_count': len(conversation_history)
             })
             
+        except openai.AuthenticationError:
+            return jsonify({
+                'status': 'error',
+                'message': 'Invalid OpenAI API key'
+            }), 401
+        except openai.RateLimitError:
+            return jsonify({
+                'status': 'warning',
+                'message': 'API rate limit reached but connection is valid'
+            }), 200
         except Exception as e:
             return jsonify({
                 'status': 'error',
-                'message': f'Failed to connect to Azure AI Foundry: {str(e)}'
+                'message': f'Failed to connect to OpenAI API: {str(e)}'
             }), 500
         
     except Exception as e:
@@ -518,25 +512,24 @@ if __name__ == '__main__':
     - Development server configuration
     - Error handling for missing configuration
     
-    The application will exit with code 1 if required environment
-    variables are missing, displaying helpful setup instructions.
+    The application will start even with missing configuration to show
+    the landing page, but the chat functionality requires proper setup.
     """
-    print("🚀 Starting Azure AI Foundry AgentCarRepair Web Application")
+    print("🚀 Starting AI Car Repair Assistant Web Application")
     print(f"📅 Application started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     
-    # Validate environment on startup
+    # Check environment but don't exit - let landing page show
     is_valid, missing_vars = validate_environment()
     if not is_valid:
-        print(f"❌ Missing required environment variables: {missing_vars}")
-        print("Please set these in your .env file:")
-        for var in missing_vars:
-            print(f"   {var}=your-{var.lower().replace('_', '-')}")
-        print("\n📖 For detailed setup instructions, visit the error page at http://localhost:5000")
-        print("   after starting the application with minimal configuration.")
-        exit(1)
+        print(f"⚠️  Missing environment variables: {missing_vars}")
+        print("   Landing page will work, but chat requires OpenAI API key")
+        print("   Please set OPENAI_API_KEY in your .env file")
+    else:
+        print("✅ Environment validation passed")
     
-    print("✅ Environment validation passed")
-    print("🌐 Starting AgentCarRepair web server at http://localhost:5000")
+    print("🌐 Starting AI Car Repair web server at http://localhost:5001")
+    print("📄 Landing page: http://localhost:5001")
+    print("💬 Chat interface: http://localhost:5001/chat")
     print("🛑 Press Ctrl+C to stop the server")
     
     # Run with debug mode based on environment
@@ -545,7 +538,7 @@ if __name__ == '__main__':
         print("🐛 Debug mode enabled")
     
     try:
-        app.run(debug=debug_mode, host='0.0.0.0', port=5000)
+        app.run(debug=debug_mode, host='0.0.0.0', port=5001)
     except KeyboardInterrupt:
         print("\n🛑 Application stopped by user")
     except Exception as e:

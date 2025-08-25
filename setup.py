@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Azure AI Foundry AgentCarRepair - Setup and Installation Script
+AI Car Repair Assistant - Setup and Installation Script
 
-This script helps you set up the AgentCarRepair application by:
+This script helps you set up the AI Car Repair Assistant application by:
 1. Checking Python version compatibility
 2. Installing required dependencies
-3. Validating Azure configuration
+3. Validating OpenAI configuration
 4. Testing the application setup
 
 Usage:
@@ -15,6 +15,7 @@ Requirements:
     - Python 3.8 or higher
     - pip package manager
     - Internet connection for package installation
+    - OpenAI API key
 """
 
 import sys
@@ -117,19 +118,23 @@ def check_env_file():
         
         if template_file.exists():
             print("   📝 A template file (.env.template) is available")
-            print("   Please copy it to .env and fill in your Azure credentials:")
+            print("   Please copy it to .env and fill in your OpenAI API key:")
             print(f"   copy {template_file.name} .env  (Windows)")
             print(f"   cp {template_file.name} .env    (macOS/Linux)")
         else:
-            print("   Please create a .env file with your Azure configuration")
+            print("   Please create a .env file with your OpenAI configuration")
         
         print("\n   Required environment variables:")
         required_vars = [
-            "AZURE_CLIENT_ID", "AZURE_CLIENT_SECRET", "AZURE_TENANT_ID",
-            "AZURE_ENDPOINT", "AZURE_AGENT_ID"
+            "OPENAI_API_KEY"
+        ]
+        optional_vars = [
+            "FLASK_SECRET_KEY", "FLASK_DEBUG"
         ]
         for var in required_vars:
-            print(f"   - {var}")
+            print(f"   - {var} (required)")
+        for var in optional_vars:
+            print(f"   - {var} (optional)")
         
         return False
 
@@ -139,8 +144,7 @@ def test_imports():
     
     required_packages = [
         ("flask", "Flask web framework"),
-        ("azure.ai.projects", "Azure AI Projects SDK"),
-        ("azure.identity", "Azure Identity library"),
+        ("openai", "OpenAI Python SDK"),
     ]
     
     all_good = True
@@ -172,9 +176,9 @@ def test_imports():
     
     return all_good
 
-def validate_azure_config():
-    """Validate Azure configuration if .env file exists."""
-    print_step(6, "Validating Azure Configuration")
+def validate_openai_config():
+    """Validate OpenAI configuration if .env file exists."""
+    print_step(6, "Validating OpenAI Configuration")
     
     env_file = Path(__file__).parent / ".env"
     if not env_file.exists():
@@ -190,10 +194,7 @@ def validate_azure_config():
     except ImportError:
         print("   📁 Loading environment variables (python-dotenv not available)")
     
-    required_vars = [
-        "AZURE_CLIENT_ID", "AZURE_CLIENT_SECRET", "AZURE_TENANT_ID",
-        "AZURE_ENDPOINT", "AZURE_AGENT_ID"
-    ]
+    required_vars = ["OPENAI_API_KEY"]
     
     missing_vars = []
     for var in required_vars:
@@ -206,40 +207,40 @@ def validate_azure_config():
     else:
         print_success("All required environment variables are set")
         
-        # Try to test Azure connection
+        # Try to test OpenAI connection
         try:
-            from azure.identity import DefaultAzureCredential, ClientSecretCredential
-            from azure.ai.projects import AIProjectClient
+            import openai
+            from openai import OpenAI
             
-            # Create credential
-            client_id = os.getenv('AZURE_CLIENT_ID')
-            client_secret = os.getenv('AZURE_CLIENT_SECRET')
-            tenant_id = os.getenv('AZURE_TENANT_ID')
+            # Test API connection
+            api_key = os.getenv('OPENAI_API_KEY')
+            client = OpenAI(api_key=api_key)
             
-            if all([client_id, client_secret, tenant_id]):
-                credential = ClientSecretCredential(
-                    tenant_id=tenant_id,
-                    client_id=client_id,
-                    client_secret=client_secret
-                )
-                print("   🔐 Using service principal authentication")
-            else:
-                credential = DefaultAzureCredential()
-                print("   🔐 Using default Azure credential")
+            print("   🔐 Testing OpenAI API connection...")
             
-            # Test connection
-            endpoint = os.getenv('AZURE_ENDPOINT')
-            project = AIProjectClient(credential=credential, endpoint=endpoint)
+            # Test with a simple API call
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": "Test connection"}],
+                max_tokens=10
+            )
             
-            agent_id = os.getenv('AZURE_AGENT_ID')
-            agent = project.agents.get_agent(agent_id)
-            
-            print_success(f"Successfully connected to Azure AI agent: {agent.id}")
+            print_success(f"Successfully connected to OpenAI API")
+            print(f"   Model: gpt-4o-mini")
+            print(f"   Test response received")
             return True
             
+        except openai.AuthenticationError:
+            print_error("Invalid OpenAI API key")
+            print("   Please check your OPENAI_API_KEY in the .env file")
+            return False
+        except openai.RateLimitError:
+            print_warning("API rate limit reached, but connection is valid")
+            print("   Your API key is working correctly")
+            return True
         except Exception as e:
-            print_error(f"Failed to connect to Azure: {str(e)}")
-            print("   Please check your Azure credentials and permissions")
+            print_error(f"Failed to connect to OpenAI API: {str(e)}")
+            print("   Please check your API key and internet connection")
             return False
 
 def print_next_steps():
@@ -249,15 +250,16 @@ def print_next_steps():
     print("🚀 Setup Complete! Here's what to do next:")
     print()
     print("1. 📝 Configure your environment:")
-    print("   - Copy .env.template to .env")
-    print("   - Fill in your Azure credentials")
-    print("   - Set up your car repair agent in Azure AI Foundry")
+    print("   - Copy .env.template to .env (if not already done)")
+    print("   - Add your OpenAI API key to the .env file")
+    print("   - Get your API key from: https://platform.openai.com/api-keys")
     print()
     print("2. 🧪 Test the application:")
     print("   python AgentRepair.py")
     print()
     print("3. 🌐 Open your browser:")
-    print("   http://localhost:5000")
+    print("   Landing page: http://localhost:5000")
+    print("   Chat interface: http://localhost:5000/chat")
     print()
     print("4. 📚 For detailed instructions, see:")
     print("   - README.md (comprehensive documentation)")
@@ -265,13 +267,13 @@ def print_next_steps():
     print()
     print("🆘 Need help?")
     print("   - Check the troubleshooting section in README.md")
-    print("   - Verify your Azure AI Foundry project setup")
-    print("   - Ensure your service principal has proper permissions")
+    print("   - Verify your OpenAI API key is valid")
+    print("   - Ensure you have sufficient OpenAI API credits")
 
 def main():
     """Main setup function."""
-    print_header("Azure AI Foundry AgentCarRepair Setup")
-    print("🛠️  This script will help you set up the car repair assistant application")
+    print_header("AI Car Repair Assistant Setup")
+    print("🛠️  This script will help you set up the AI car repair assistant application")
     print(f"📍 Platform: {platform.system()} {platform.release()}")
     print(f"📂 Working directory: {Path(__file__).parent}")
     
@@ -294,7 +296,7 @@ def main():
     if test_imports():
         steps_passed += 1
     
-    if validate_azure_config():
+    if validate_openai_config():
         steps_passed += 1
     
     # Summary
@@ -303,7 +305,7 @@ def main():
     
     if steps_passed == total_steps:
         print_success("Setup completed successfully!")
-        print("🎉 Your AgentCarRepair application is ready to run!")
+        print("🎉 Your AI Car Repair Assistant application is ready to run!")
     elif steps_passed >= 3:
         print_warning("Setup partially completed")
         print("⚙️  You can run the application, but some features may not work")

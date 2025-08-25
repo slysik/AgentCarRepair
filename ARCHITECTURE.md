@@ -57,54 +57,57 @@
 ┌─────────────────────────────────────────────────────────────────────────────────┐
 │                     AUTHENTICATION LAYER                                       │
 ├─────────────────────────────────────────────────────────────────────────────────┤
-│                     Azure Identity Library                                     │
+│                     OpenAI API Authentication                                  │
 │  ┌─────────────────────────────────────────────────────────────────────────┐   │
-│  │                  Credential Chain                                      │   │
+│  │                      API Key Management                                 │   │
 │  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  │   │
-│  │  │  Service    │  │  Managed    │  │  Azure CLI  │  │  VS Code    │  │   │
-│  │  │ Principal   │  │  Identity   │  │ Credentials │  │ Credentials │  │   │
-│  │  │ (Primary)   │  │             │  │             │  │             │  │   │
+│  │  │  OpenAI     │  │ Environment │  │   Request   │  │    Rate     │  │   │
+│  │  │  API Key    │  │  Variable   │  │  Headers    │  │  Limiting   │  │   │
+│  │  │ Validation  │  │  Loading    │  │ Management  │  │ & Retries   │  │   │
 │  │  └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘  │   │
 │  └─────────────────────────────────────────────────────────────────────────┘   │
 │                                                                               │
 │  Environment Variables:                                                       │
-│  - AZURE_CLIENT_ID                                                           │
-│  - AZURE_CLIENT_SECRET                                                       │
-│  - AZURE_TENANT_ID                                                           │
+│  - OPENAI_API_KEY (Required)                                                 │
+│  - FLASK_SECRET_KEY (Optional)                                               │
+│  - FLASK_DEBUG (Optional)                                                    │
 └─────────────────────────────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                         AZURE CLOUD LAYER                                      │
+│                         OPENAI CLOUD LAYER                                     │
 ├─────────────────────────────────────────────────────────────────────────────────┤
-│                        Azure AI Foundry                                        │
+│                          OpenAI Platform                                       │
 │  ┌─────────────────────────────────────────────────────────────────────────┐   │
-│  │                      AI Project Client                                 │   │
+│  │                        OpenAI Client                                   │   │
 │  │                                                                         │   │
 │  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  │   │
-│  │  │   Agents    │  │   Threads   │  │  Messages   │  │    Runs     │  │   │
-│  │  │ Management  │  │ Management  │  │ Management  │  │ Management  │  │   │
+│  │  │Chat Model   │  │Conversation │  │  Message    │  │  Response   │  │   │
+│  │  │ Selection   │  │  Context    │  │ Formatting  │  │ Processing  │  │   │
+│  │  │(GPT-4o-mini)│  │ Management  │  │             │  │             │  │   │
 │  │  │             │  │             │  │             │  │             │  │   │
-│  │  │ - Get Agent │  │ - Create    │  │ - Create    │  │ - Process   │  │   │
-│  │  │ - List      │  │ - Manage    │  │ - List      │  │ - Monitor   │  │   │
-│  │  │   Agents    │  │   Context   │  │ - Format    │  │ - Status    │  │   │
+│  │  │ - Model     │  │ - History   │  │ - System    │  │ - Content   │  │   │
+│  │  │   Config    │  │   Tracking  │  │   Prompts   │  │ Extraction  │  │   │
+│  │  │ - Params    │  │ - Session   │  │ - User      │  │ - HTML      │  │   │
+│  │  │ - Tokens    │  │   State     │  │   Messages  │  │ Formatting  │  │   │
 │  │  └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘  │   │
 │  └─────────────────────────────────────────────────────────────────────────┘   │
 │                                    │                                           │
 │                                    ▼                                           │
 │  ┌─────────────────────────────────────────────────────────────────────────┐   │
-│  │                     Car Repair AI Agent                                │   │
+│  │                     Car Repair AI System                               │   │
 │  │                                                                         │   │
 │  │  ┌─────────────────────────────────────────────────────────────────┐   │   │
-│  │  │                    Knowledge Base                               │   │   │
+│  │  │                    Built-in Knowledge                           │   │   │
 │  │  │                                                                 │   │   │
 │  │  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐            │   │   │
-│  │  │  │Azure AI     │  │ Car Repair  │  │ Diagnostic  │            │   │   │
-│  │  │  │Search Index │  │   Manuals   │  │ Knowledge   │            │   │   │
+│  │  │  │   GPT-4o    │  │   System    │  │ Automotive  │            │   │   │
+│  │  │  │   Model     │  │  Prompts    │  │ Expertise   │            │   │   │
 │  │  │  │             │  │             │  │             │            │   │   │
-│  │  │  │ - Indexed   │  │ - PDF Docs  │  │ - Symptoms  │            │   │   │
-│  │  │  │   Content   │  │ - Technical │  │ - Solutions │            │   │   │
-│  │  │  │ - Searchable│  │   Specs     │  │ - Procedures│            │   │   │
+│  │  │  │ - Pre-      │  │ - Expert    │  │ - Diagnosis │            │   │   │
+│  │  │  │   trained   │  │   Mechanic  │  │ - Repair    │            │   │   │
+│  │  │  │ - Automotive│  │   Role      │  │   Steps     │            │   │   │
+│  │  │  │   Knowledge │  │ - Safety    │  │ - Safety    │            │   │   │
 │  │  │  └─────────────┘  └─────────────┘  └─────────────┘            │   │   │
 │  │  └─────────────────────────────────────────────────────────────────┘   │   │
 │  └─────────────────────────────────────────────────────────────────────────┘   │
@@ -112,20 +115,22 @@
                                     │
                                     ▼
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                          DATA STORAGE LAYER                                    │
+│                         SESSION STORAGE LAYER                                  │
 ├─────────────────────────────────────────────────────────────────────────────────┤
-│                     Azure Data Lake Storage Gen2                               │
+│                      Flask Session Management                                  │
 │  ┌─────────────────────────────────────────────────────────────────────────┐   │
-│  │                        Document Storage                                 │   │
+│  │                    In-Memory Session Storage                           │   │
 │  │                                                                         │   │
 │  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  │   │
-│  │  │ Car Manuals │  │  Technical  │  │ Diagnostic  │  │   Other     │  │   │
-│  │  │    (PDF)    │  │    Docs     │  │   Guides    │  │ Documents   │  │   │
+│  │  │Conversation │  │  Message    │  │   Session   │  │   Request   │  │   │
+│  │  │  History    │  │   Context   │  │    State    │  │   Tracking  │  │   │
 │  │  │             │  │             │  │             │  │             │  │   │
-│  │  │ - Make/Model│  │ - Repair    │  │ - Trouble-  │  │ - Parts     │  │   │
-│  │  │   Specific  │  │   Procedures│  │   shooting  │  │   Catalogs  │  │   │
-│  │  │ - Year-based│  │ - Wiring    │  │ - Error     │  │ - Service   │  │   │
-│  │  │ - Multi-lang│  │   Diagrams  │  │   Codes     │  │   Bulletins │  │   │
+│  │  │ - User      │  │ - Formatted │  │ - Conversation│ │ - Timestamps│  │   │
+│  │  │   Messages  │  │   Responses │  │    IDs      │  │ - User      │  │   │
+│  │  │ - Assistant │  │ - HTML      │  │ - Session   │  │   Sessions  │  │   │
+│  │  │   Replies   │  │   Content   │  │   Keys      │  │ - Request   │  │   │
+│  │  │ - Context   │  │ - Raw Text  │  │ - Secure    │  │   Logging   │  │   │
+│  │  │   Limit     │  │             │  │   Storage   │  │             │  │   │
 │  │  └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘  │   │
 │  └─────────────────────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────────────────────┘
@@ -136,24 +141,24 @@
 ```
 USER REQUEST FLOW:
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Browser   │───▶│    Flask    │───▶│   Azure     │───▶│ AI Agent    │
-│             │    │   Server    │    │   Auth      │    │             │
+│   Browser   │───▶│    Flask    │───▶│   OpenAI    │───▶│  GPT-4o     │
+│             │    │   Server    │    │   Client    │    │   Model     │
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
        ▲                   │                   │                   │
        │                   ▼                   ▼                   ▼
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  Formatted  │◀───│   Session   │    │ AI Foundry  │───▶│  Knowledge  │
-│  Response   │    │ Management  │    │  Project    │    │    Base     │
+│  Formatted  │◀───│   Session   │    │   OpenAI    │───▶│  Built-in   │
+│  Response   │    │ Management  │    │     API     │    │  Knowledge  │
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
 
 CONVERSATION FLOW:
 1. User sends message via web interface
 2. Flask server validates session and environment
-3. Azure authentication via service principal
-4. AI Foundry project client connection
-5. Agent retrieval and thread management
-6. Message processing and knowledge base search
-7. AI response generation
+3. OpenAI API key authentication
+4. OpenAI client initialization
+5. Conversation context management
+6. System prompt and message formatting
+7. GPT-4o-mini API request and response
 8. HTML formatting and session update
 9. JSON response back to user interface
 ```

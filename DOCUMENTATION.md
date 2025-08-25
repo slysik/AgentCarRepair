@@ -2,7 +2,7 @@
 
 ## 📚 Complete Documentation Overview
 
-This document provides a quick reference to all the documentation and setup resources for the Azure AI Foundry AgentCarRepair application.
+This document provides a quick reference to all the documentation and setup resources for the AI Car Repair Assistant application (OpenAI-based implementation).
 
 ## 🗂️ Documentation Files
 
@@ -35,12 +35,8 @@ This document provides a quick reference to all the documentation and setup reso
 
 ### Environment Variables (.env)
 ```env
-# Required Azure settings
-AZURE_CLIENT_ID=your-service-principal-client-id
-AZURE_CLIENT_SECRET=your-service-principal-secret
-AZURE_TENANT_ID=your-azure-tenant-id
-AZURE_ENDPOINT=https://your-endpoint.services.ai.azure.com/api/projects/your-project
-AZURE_AGENT_ID=your-car-repair-agent-id
+# Required OpenAI settings
+OPENAI_API_KEY=your-openai-api-key
 
 # Optional Flask settings
 FLASK_SECRET_KEY=your-secure-secret-key
@@ -49,8 +45,8 @@ FLASK_DEBUG=False
 
 ### Dependencies (requirements-agentrepair.txt)
 - **Flask** >=3.0.0 - Web framework
-- **azure-ai-projects** >=1.0.0 - AI Foundry integration
-- **azure-identity** >=1.15.0 - Azure authentication
+- **openai** >=1.0.0 - OpenAI API integration
+- **requests** >=2.31.0 - HTTP client for API calls
 - **python-dotenv** >=1.0.0 - Environment management (optional)
 
 ## 🏗️ Architecture Overview
@@ -59,16 +55,16 @@ FLASK_DEBUG=False
 AgentCarRepair Application
 ├── Web Interface (Flask)
 │   ├── Chat UI (templates/chat.html)
+│   ├── Landing Page (templates/landing.html)
 │   ├── Error Page (templates/error.html)
 │   └── API Endpoints (/api/*)
-├── Azure Integration
-│   ├── AI Foundry Client
-│   ├── Agent Communication
+├── OpenAI Integration
+│   ├── OpenAI Client
+│   ├── GPT Model Communication
 │   └── Session Management
 └── Support Tools
     ├── Setup Script (setup.py)
-    ├── Launchers (*.bat, *.ps1)
-    └── Resource Explorer (foundryResourceExplorer.py)
+    └── Launchers (*.bat, *.ps1)
 ```
 
 ## 📋 API Reference
@@ -91,8 +87,8 @@ POST /api/chat
 {
   "response": "<p>Here are the steps to diagnose...</p>",
   "raw_response": "Here are the steps to diagnose...",
-  "thread_id": "thread_abc123",
-  "timestamp": "2025-08-19T10:30:00"
+  "conversation_id": "conv_20250825_103000",
+  "timestamp": "2025-08-25T10:30:00"
 }
 ```
 
@@ -126,16 +122,16 @@ python AgentRepair.py
 ### Common Issues
 | Problem | Solution | Reference |
 |---------|----------|-----------|
-| Missing environment variables | Check .env file setup | .env.template, README.md |
-| Azure authentication failed | Verify service principal permissions | README.md security section |
-| Agent not found | Check AZURE_AGENT_ID in .env | README.md configuration |
+| Missing environment variables | Check .env file setup | README.md configuration |
+| OpenAI authentication failed | Verify API key is valid and active | README.md, OpenAI Platform |
+| API rate limit exceeded | Check OpenAI usage and billing | OpenAI Usage Dashboard |
 | Import errors | Install dependencies | requirements-agentrepair.txt |
 | Python version issues | Upgrade to Python 3.8+ | setup.py checks |
 
 ### Debug Tools
 - **setup.py** - Comprehensive system validation
 - **GET /api/status** - Runtime health check
-- **foundryResourceExplorer.py** - Azure resource exploration
+- **OpenAI API Status** - Check [status.openai.com](https://status.openai.com/)
 - **FLASK_DEBUG=True** - Detailed error output
 
 ## 📞 Support Resources
@@ -176,6 +172,7 @@ curl http://localhost:5000/api/status
 
 ---
 
-**Last Updated**: August 20, 2025  
-**Version**: 1.0.0  
-**Compatibility**: Python 3.8+, Azure AI Foundry, Windows/macOS/Linux
+**Last Updated**: August 25, 2025  
+**Version**: 2.0.0  
+**Compatibility**: Python 3.8+, OpenAI API, Windows/macOS/Linux
+**Current Model**: GPT-4o-mini for cost-effective responses

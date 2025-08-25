@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azure AI Foundry AgentCarRepair</title>
+    <title>AI Car Repair Assistant - Chat</title>
     <style>
         * {
             margin: 0;
@@ -279,14 +279,14 @@
     <div class="chat-container">
         <div class="chat-header">
             <div class="status-indicator" id="statusIndicator"></div>
-            <h1>🚗 Azure AI Foundry AgentCarRepair</h1>
-            <p>Chat with your car repair assistant agent</p>
+            <h1>🚗 AI Car Repair Assistant</h1>
+            <p>Chat with your AI-powered automotive expert</p>
         </div>
 
         <div class="chat-messages" id="chatMessages">
             <div class="message assistant">
                 <div class="message-content">
-                    <div class="message-text">Hello! I'm your Azure AI Foundry car repair assistant. How can I help you with your vehicle today?</div>
+                    <div class="message-text">Hello! I'm your AI car repair assistant. I'm here to help diagnose problems, suggest repairs, and provide automotive advice. How can I help you with your vehicle today?</div>
                     <div class="message-time" id="welcomeTime"></div>
                 </div>
             </div>
@@ -302,6 +302,7 @@
 
         <div class="chat-input-container">
             <div class="controls">
+                <button class="control-button" onclick="location.href='/'">🏠 Home</button>
                 <button class="control-button" onclick="newConversation()">🔄 New Chat</button>
                 <button class="control-button" onclick="checkStatus()">📊 Status</button>
                 <button class="control-button" onclick="clearMessages()">🗑️ Clear</button>
@@ -414,7 +415,13 @@
                     // Add assistant message with HTML formatting
                     addMessage(data.response, 'assistant', null, true);
                 } else {
-                    showError(data.error || 'Unknown error occurred');
+                    if (response.status === 429) {
+                        showError('Rate limit exceeded. Please wait a moment and try again.');
+                    } else if (response.status === 401) {
+                        showError('API authentication error. Please check your OpenAI API key configuration.');
+                    } else {
+                        showError(data.error || 'Unknown error occurred');
+                    }
                 }
                 
             } catch (error) {
@@ -432,7 +439,7 @@
                 
                 if (response.ok) {
                     clearMessages();
-                    addMessage("New conversation started! How can I help you with your vehicle today?", 'assistant');
+                    addMessage("New conversation started! I'm ready to help with your automotive questions and concerns.", 'assistant');
                 }
             } catch (error) {
                 showError('Failed to start new conversation: ' + error.message);
@@ -444,7 +451,16 @@
                 const response = await fetch('/api/status');
                 const data = await response.json();
                 
-                const statusMessage = `Status: ${data.status}\n${data.message}\nThread ID: ${data.thread_id}`;
+                let statusMessage = `Status: ${data.status}\n${data.message}`;
+                if (data.model) {
+                    statusMessage += `\nModel: ${data.model}`;
+                }
+                if (data.conversation_id && data.conversation_id !== 'none') {
+                    statusMessage += `\nConversation ID: ${data.conversation_id}`;
+                }
+                if (data.messages_count !== undefined) {
+                    statusMessage += `\nMessages in history: ${data.messages_count}`;
+                }
                 addMessage(statusMessage, 'assistant');
                 
                 // Update status indicator
@@ -461,7 +477,7 @@
             messagesContainer.innerHTML = `
                 <div class="message assistant">
                     <div class="message-content">
-                        <div class="message-text">Hello! I'm your Azure AI Foundry car repair assistant. How can I help you with your vehicle today?</div>
+                        <div class="message-text">Hello! I'm your AI car repair assistant. I'm here to help diagnose problems, suggest repairs, and provide automotive advice. How can I help you with your vehicle today?</div>
                         <div class="message-time">${formatTime()}</div>
                     </div>
                 </div>

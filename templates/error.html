@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuration Error - Azure AI Foundry AgentCarRepair</title>
+    <title>Configuration Error - AI Car Repair Assistant</title>
     <style>
         * {
             margin: 0;
@@ -133,23 +133,13 @@
             <h3>How to Fix:</h3>
             <ol>
                 <li>Create a <code>.env</code> file in the same directory as the application</li>
-                <li>Add the following environment variables to the .env file:</li>
-                <div class="env-example">AZURE_SUBSCRIPTION_ID=your-subscription-id
-AZURE_RESOURCE_GROUP=your-resource-group-name
-AZURE_PROJECT_NAME=your-project-name
-AZURE_ENDPOINT=https://your-endpoint.services.ai.azure.com/api/projects/your-project
-AZURE_CLIENT_ID=your-service-principal-client-id
-AZURE_CLIENT_SECRET=your-service-principal-secret
-AZURE_TENANT_ID=your-azure-tenant-id
-AZURE_AGENT_ID=your-agent-id
-FLASK_SECRET_KEY=your-secret-key-for-sessions</div>
-                <li>Replace the placeholder values with your actual Azure credentials</li>
-                <li>Ensure your service principal has the required permissions:
-                    <ul>
-                        <li>Cognitive Services Contributor</li>
-                        <li>Reader role on the resource group</li>
-                    </ul>
-                </li>
+                <li>Add the following environment variables to the .env file (minimum required):</li>
+                <div class="env-example">OPENAI_API_KEY=your-openai-api-key
+FLASK_SECRET_KEY=your-secret-key-for-sessions
+FLASK_DEBUG=False</div>
+                <li>Replace 'your-openai-api-key' with your actual OpenAI API key</li>
+                <li>Get your OpenAI API key from: <a href="https://platform.openai.com/api-keys" target="_blank">https://platform.openai.com/api-keys</a></li>
+                <li>Ensure you have sufficient credits in your OpenAI account</li>
                 <li>Restart the application</li>
             </ol>
         </div>

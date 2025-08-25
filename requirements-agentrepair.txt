@@ -1,13 +1,14 @@
-# Azure AI Foundry AgentCarRepair Web Application Dependencies
+# AI Car Repair Assistant Web Application Dependencies
 # 
 # This file contains all the Python package dependencies required to run
-# the Azure AI Foundry AgentCarRepair web application successfully.
+# the AI Car Repair Assistant web application successfully.
 #
 # Installation:
 #   pip install -r requirements-agentrepair.txt
 #
 # Python Version: 3.8 or higher recommended
-# Last Updated: August 19, 2025
+# Last Updated: August 25, 2025
+# Current Implementation: OpenAI GPT-4o-mini
 
 # ============================================================================
 # CORE DEPENDENCIES (Required)
@@ -22,20 +23,15 @@ Flask>=3.0.0
     # - Static file serving
     # - URL routing and view functions
 
-# Azure AI and Identity packages - Core Azure integration
-azure-ai-projects>=1.0.0
-    # Azure AI Projects SDK provides:
-    # - AI Foundry project client
-    # - Agent management APIs
-    # - Conversation thread handling
-    # - Message processing capabilities
-
-azure-identity>=1.15.0
-    # Azure Identity library provides:
-    # - DefaultAzureCredential for automatic auth
-    # - ClientSecretCredential for service principal auth
-    # - Integration with Azure authentication systems
-    # - Token management and refresh
+# OpenAI Python SDK - Core AI integration (REQUIRED)
+openai>=1.0.0
+    # OpenAI Python library provides:
+    # - Chat completions API access (GPT-4o-mini)
+    # - GPT model integration and management
+    # - Token usage tracking and cost optimization
+    # - Built-in rate limiting and error handling
+    # - Streaming responses and conversation management
+    # - Authentication and API key management
 
 # ============================================================================
 # FLASK ECOSYSTEM DEPENDENCIES
@@ -74,6 +70,22 @@ click>=8.1.0
     # - Custom command creation
 
 # ============================================================================
+# HTTP CLIENT DEPENDENCIES
+# ============================================================================
+
+requests>=2.31.0
+    # HTTP library for making API requests
+    # - Used by OpenAI SDK for API calls
+    # - SSL/TLS support
+    # - Connection pooling and retry logic
+
+urllib3>=2.0.0
+    # HTTP library used by requests
+    # - Connection pooling
+    # - SSL/TLS verification
+    # - Request/response handling
+
+# ============================================================================
 # OPTIONAL DEPENDENCIES
 # ============================================================================
 
@@ -84,3 +96,28 @@ python-dotenv>=1.0.0
     # - Environment variable loading
     # - Configuration management
     # Note: Application works without this but requires manual env var setup
+
+# Data handling and validation (OPTIONAL)
+pydantic>=2.0.0
+    # Data validation library that provides:
+    # - Input validation and parsing
+    # - Type hints and data models
+    # - JSON serialization/deserialization
+    # Note: Useful for request/response validation
+
+# ============================================================================
+# DEVELOPMENT DEPENDENCIES (Optional - for development only)
+# ============================================================================
+
+# Uncomment these if you want development tools:
+# pytest>=7.0.0         # Testing framework
+# black>=23.0.0          # Code formatter
+# flake8>=6.0.0          # Linting tool
+# mypy>=1.0.0            # Type checking
+
+# ============================================================================
+# CURRENT IMPLEMENTATION NOTES
+# ============================================================================
+# This application uses OpenAI GPT-4o-mini model for cost-effective AI responses
+# Dependencies are optimized for direct OpenAI API integration
+# No Azure dependencies required for current implementation

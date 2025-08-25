@@ -1,0 +1,11 @@
+{
+  "session_id": "baac4188-a601-4f3a-b89f-5b552724ac80",
+  "prompts": [
+    "revise app to not use any Azure infrastructure. use landbook landing page if you can. think hard.  ",
+    "Implement OpenAI API integration (no  Anthropic Claude API) for car repair assistance",
+    "api key is in .env",
+    " API Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The request body is not valid JSON: no low surrogate in string: line 1\n    column 234968 (char 234967)\"},\"request_id\":\"req_011CSPK4Qj323omHijFWSf4V\"}",
+    "status ?"
+  ],
+  "agent_name": "Flux"
+}

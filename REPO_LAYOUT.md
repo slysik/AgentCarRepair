@@ -1,6 +1,6 @@
 # 🎉 GitHub Repository Setup!
 
-This document summarizes the complete GitHub repository setup for **Azure AI Foundry AgentCarRepair**.
+This document summarizes the complete GitHub repository setup for **AI Car Repair Assistant** (OpenAI-based implementation).
 
 ## 📁 Repository Structure
 
@@ -18,11 +18,12 @@ AgentCarRepair/
 │
 ├── 🎨 Web Templates
 │   └── templates/
+│       ├── landing.html              # Landing page
 │       ├── chat.html                 # Main chat interface
 │       └── error.html                # Error page template
 │
 ├── 🔧 Development Tools
-│   └── foundryResourceExplorer.py               # Azure resource explorer
+│   └── foundryResourceExplorer.py               # Legacy Azure resource explorer (unused)
 │
 ├── 📚 Documentation
 │   ├── README.md                     # Primary documentation
