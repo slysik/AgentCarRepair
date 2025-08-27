@@ -116,8 +116,67 @@ pydantic>=2.0.0
 # mypy>=1.0.0            # Type checking
 
 # ============================================================================
+# PDF PROCESSING DEPENDENCIES
+# ============================================================================
+
+# PyPDF2 - PDF text extraction for car manuals
+PyPDF2>=3.0.0
+    # PyPDF2 Python library provides:
+    # - PDF text extraction from car owner manuals
+    # - Volvo XC60 manual processing capabilities
+    # - Multi-page document parsing
+    # - Text content extraction for AI knowledge base
+
+# Playwright - Web automation for parts scraping
+playwright>=1.40.0
+    # Playwright browser automation library provides:
+    # - Automated web scraping for car-part.com
+    # - Dynamic form interaction and JavaScript handling
+    # - Mobile browser emulation for mobile sites
+    # - Reliable parts search and data extraction
+
+# ============================================================================
+# POSTGRESQL AND VECTOR DATABASE DEPENDENCIES
+# ============================================================================
+
+# PostgreSQL database adapter with binary support for performance
+psycopg[binary,pool]>=3.1.0
+    # Modern PostgreSQL adapter that provides:
+    # - Async/sync database connections
+    # - Connection pooling for performance
+    # - Binary protocol support for speed
+    # - Type adaptation and conversion
+    # - Full PostgreSQL feature support
+
+# pgvector - PostgreSQL extension for vector similarity search
+pgvector>=0.2.0
+    # Vector database extension that provides:
+    # - High-performance vector similarity search
+    # - Support for embeddings storage and indexing
+    # - HNSW and IVFFlat approximate nearest neighbor indexes
+    # - Integration with OpenAI embeddings
+    # - Cosine, L2, and inner product distance metrics
+
+# NumPy - Numerical computing for vector operations
+numpy>=1.24.0
+    # Essential numerical library that provides:
+    # - Efficient array operations for embeddings
+    # - Mathematical functions for vector computations
+    # - Integration with pgvector and OpenAI
+    # - Memory-efficient data structures
+
+# Progress bars for migration and data processing
+tqdm>=4.65.0
+    # Progress indication library that provides:
+    # - Visual progress bars for long-running operations
+    # - Data migration progress tracking
+    # - Embedding generation progress monitoring
+    # - User feedback during processing
+
+# ============================================================================
 # CURRENT IMPLEMENTATION NOTES
 # ============================================================================
 # This application uses OpenAI GPT-4o-mini model for cost-effective AI responses
 # Dependencies are optimized for direct OpenAI API integration
-# No Azure dependencies required for current implementation
+# PostgreSQL with pgvector provides scalable vector similarity search
+# PyPDF2 enables integration of car owner manuals (e.g., Volvo XC60)

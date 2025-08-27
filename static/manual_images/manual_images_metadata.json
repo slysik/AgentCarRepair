@@ -1,0 +1,2938 @@
+{
+  "pdf_source": "/Users/slysik/Downloads/XC60_OwnersManual_MY21_en-US_TP32027 (1).pdf",
+  "extraction_timestamp": "2025-08-27T14:41:42.979686",
+  "total_images": 161,
+  "images": [
+    {
+      "page_number": 1,
+      "image_index": 3,
+      "filename": "page_001_img_03_10d49787.png",
+      "file_path": "/static/manual_images/introduction/page_001_img_03_10d49787.png",
+      "width": 114,
+      "height": 113,
+      "size_bytes": 157,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 1",
+      "section": "introduction",
+      "figure_number": "",
+      "keywords": [
+        "introduction"
+      ]
+    },
+    {
+      "page_number": 1,
+      "image_index": 11,
+      "filename": "page_001_img_11_d2c819ff.png",
+      "file_path": "/static/manual_images/introduction/page_001_img_11_d2c819ff.png",
+      "width": 145,
+      "height": 144,
+      "size_bytes": 227,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 1",
+      "section": "introduction",
+      "figure_number": "",
+      "keywords": [
+        "introduction"
+      ]
+    },
+    {
+      "page_number": 1,
+      "image_index": 87,
+      "filename": "page_001_img_87_57a3fafa.png",
+      "file_path": "/static/manual_images/introduction/page_001_img_87_57a3fafa.png",
+      "width": 5622,
+      "height": 1819,
+      "size_bytes": 557737,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 1",
+      "section": "introduction",
+      "figure_number": "",
+      "keywords": [
+        "introduction"
+      ]
+    },
+    {
+      "page_number": 19,
+      "image_index": 1,
+      "filename": "page_019_img_01_aa4bf56e.png",
+      "file_path": "/static/manual_images/maintenance/page_019_img_01_aa4bf56e.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1345,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 19",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 20,
+      "image_index": 2,
+      "filename": "page_020_img_02_aa4bf56e.png",
+      "file_path": "/static/manual_images/introduction/page_020_img_02_aa4bf56e.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1345,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 20",
+      "section": "introduction",
+      "figure_number": "",
+      "keywords": [
+        "introduction"
+      ]
+    },
+    {
+      "page_number": 22,
+      "image_index": 1,
+      "filename": "page_022_img_01_0f7cfbe5.png",
+      "file_path": "/static/manual_images/interior/page_022_img_01_0f7cfbe5.png",
+      "width": 158,
+      "height": 242,
+      "size_bytes": 872,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 22",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "seat",
+        "interior",
+        "component"
+      ]
+    },
+    {
+      "page_number": 65,
+      "image_index": 1,
+      "filename": "page_065_img_01_19473660.png",
+      "file_path": "/static/manual_images/safety/page_065_img_01_19473660.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 7518,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 65",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "screw",
+        "warning",
+        "airbag"
+      ]
+    },
+    {
+      "page_number": 68,
+      "image_index": 1,
+      "filename": "page_068_img_01_0b96cbd4.png",
+      "file_path": "/static/manual_images/interior/page_068_img_01_0b96cbd4.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1300,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 68",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 72,
+      "image_index": 2,
+      "filename": "page_072_img_02_0b96cbd4.png",
+      "file_path": "/static/manual_images/safety/page_072_img_02_0b96cbd4.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1300,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 72",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "position",
+        "warning",
+        "airbag"
+      ]
+    },
+    {
+      "page_number": 73,
+      "image_index": 1,
+      "filename": "page_073_img_01_b4c87823.png",
+      "file_path": "/static/manual_images/safety/page_073_img_01_b4c87823.png",
+      "width": 381,
+      "height": 262,
+      "size_bytes": 13931,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 73",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 77,
+      "image_index": 1,
+      "filename": "page_077_img_01_ff004ef1.png",
+      "file_path": "/static/manual_images/safety/page_077_img_01_ff004ef1.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 12357,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 77",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "position",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 81,
+      "image_index": 1,
+      "filename": "page_081_img_01_a496c029.png",
+      "file_path": "/static/manual_images/interior/page_081_img_01_a496c029.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1380,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 81",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 82,
+      "image_index": 1,
+      "filename": "page_082_img_01_7ec4966c.png",
+      "file_path": "/static/manual_images/maintenance/page_082_img_01_7ec4966c.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1290,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 82",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "replace",
+        "position",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 83,
+      "image_index": 3,
+      "filename": "page_083_img_03_7ec4966c.png",
+      "file_path": "/static/manual_images/maintenance/page_083_img_03_7ec4966c.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1290,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 83",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "replace",
+        "position",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 84,
+      "image_index": 2,
+      "filename": "page_084_img_02_7ec4966c.png",
+      "file_path": "/static/manual_images/interior/page_084_img_02_7ec4966c.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1290,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 84",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 89,
+      "image_index": 1,
+      "filename": "page_089_img_01_31d099a2.png",
+      "file_path": "/static/manual_images/exterior/page_089_img_01_31d099a2.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 2309,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 89",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 93,
+      "image_index": 1,
+      "filename": "page_093_img_01_3d44643a.png",
+      "file_path": "/static/manual_images/safety/page_093_img_01_3d44643a.png",
+      "width": 542,
+      "height": 374,
+      "size_bytes": 948,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 93",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "location",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 93,
+      "image_index": 3,
+      "filename": "page_093_img_03_640d05b5.png",
+      "file_path": "/static/manual_images/safety/page_093_img_03_640d05b5.png",
+      "width": 208,
+      "height": 208,
+      "size_bytes": 329,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 93",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "location",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 95,
+      "image_index": 1,
+      "filename": "page_095_img_01_f2f722b4.png",
+      "file_path": "/static/manual_images/controls/page_095_img_01_f2f722b4.png",
+      "width": 354,
+      "height": 268,
+      "size_bytes": 675,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 95",
+      "section": "controls",
+      "figure_number": "",
+      "keywords": [
+        "controls",
+        "illustration"
+      ]
+    },
+    {
+      "page_number": 145,
+      "image_index": 1,
+      "filename": "page_145_img_01_9cd92c5c.png",
+      "file_path": "/static/manual_images/interior/page_145_img_01_9cd92c5c.png",
+      "width": 342,
+      "height": 178,
+      "size_bytes": 483,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 145",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "location",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 148,
+      "image_index": 1,
+      "filename": "page_148_img_01_58b3e31d.png",
+      "file_path": "/static/manual_images/interior/page_148_img_01_58b3e31d.png",
+      "width": 425,
+      "height": 173,
+      "size_bytes": 509,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 148",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "dashboard",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 148,
+      "image_index": 5,
+      "filename": "page_148_img_05_4eb3270d.png",
+      "file_path": "/static/manual_images/interior/page_148_img_05_4eb3270d.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1360,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 148",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "dashboard",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 164,
+      "image_index": 3,
+      "filename": "page_164_img_03_400fd2d7.png",
+      "file_path": "/static/manual_images/lights/page_164_img_03_400fd2d7.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1367,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 164",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "led",
+        "lights",
+        "lighting",
+        "headlight"
+      ]
+    },
+    {
+      "page_number": 178,
+      "image_index": 2,
+      "filename": "page_178_img_02_138b7dfc.png",
+      "file_path": "/static/manual_images/electrical/page_178_img_02_138b7dfc.png",
+      "width": 365,
+      "height": 252,
+      "size_bytes": 640,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 178",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "electrical"
+      ]
+    },
+    {
+      "page_number": 182,
+      "image_index": 1,
+      "filename": "page_182_img_01_4e597513.png",
+      "file_path": "/static/manual_images/maintenance/page_182_img_01_4e597513.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1677,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 182",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "interval",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 183,
+      "image_index": 1,
+      "filename": "page_183_img_01_4e597513.png",
+      "file_path": "/static/manual_images/maintenance/page_183_img_01_4e597513.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1677,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 183",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "interval",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 185,
+      "image_index": 1,
+      "filename": "page_185_img_01_4e597513.png",
+      "file_path": "/static/manual_images/lights/page_185_img_01_4e597513.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1677,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 185",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "lights",
+        "headlight"
+      ]
+    },
+    {
+      "page_number": 186,
+      "image_index": 1,
+      "filename": "page_186_img_01_4e597513.png",
+      "file_path": "/static/manual_images/maintenance/page_186_img_01_4e597513.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1677,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 186",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "interval",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 192,
+      "image_index": 1,
+      "filename": "page_192_img_01_a13805c9.png",
+      "file_path": "/static/manual_images/exterior/page_192_img_01_a13805c9.png",
+      "width": 344,
+      "height": 237,
+      "size_bytes": 581,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 192",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 193,
+      "image_index": 1,
+      "filename": "page_193_img_01_a13805c9.png",
+      "file_path": "/static/manual_images/exterior/page_193_img_01_a13805c9.png",
+      "width": 344,
+      "height": 237,
+      "size_bytes": 581,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 193",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 200,
+      "image_index": 3,
+      "filename": "page_200_img_03_a4d64274.png",
+      "file_path": "/static/manual_images/engine/page_200_img_03_a4d64274.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 607,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 200",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "engine"
+      ]
+    },
+    {
+      "page_number": 202,
+      "image_index": 5,
+      "filename": "page_202_img_05_7ec4966c.png",
+      "file_path": "/static/manual_images/wheels/page_202_img_05_7ec4966c.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1290,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 202",
+      "section": "wheels",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "illustration",
+        "tire",
+        "wheels",
+        "wheel"
+      ]
+    },
+    {
+      "page_number": 202,
+      "image_index": 6,
+      "filename": "page_202_img_06_aa4bf56e.png",
+      "file_path": "/static/manual_images/wheels/page_202_img_06_aa4bf56e.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1345,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 202",
+      "section": "wheels",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "illustration",
+        "tire",
+        "wheels",
+        "wheel"
+      ]
+    },
+    {
+      "page_number": 204,
+      "image_index": 3,
+      "filename": "page_204_img_03_b0afc599.png",
+      "file_path": "/static/manual_images/interior/page_204_img_03_b0afc599.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 8630,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 204",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 204,
+      "image_index": 4,
+      "filename": "page_204_img_04_7ec4966c.png",
+      "file_path": "/static/manual_images/interior/page_204_img_04_7ec4966c.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1290,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 204",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 207,
+      "image_index": 1,
+      "filename": "page_207_img_01_e92b490f.png",
+      "file_path": "/static/manual_images/interior/page_207_img_01_e92b490f.png",
+      "width": 104,
+      "height": 104,
+      "size_bytes": 240,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 207",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "seat",
+        "dashboard",
+        "location",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 207,
+      "image_index": 3,
+      "filename": "page_207_img_03_e54e35ca.png",
+      "file_path": "/static/manual_images/interior/page_207_img_03_e54e35ca.png",
+      "width": 183,
+      "height": 183,
+      "size_bytes": 298,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 207",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "seat",
+        "dashboard",
+        "location",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 207,
+      "image_index": 6,
+      "filename": "page_207_img_06_51560306.png",
+      "file_path": "/static/manual_images/interior/page_207_img_06_51560306.png",
+      "width": 104,
+      "height": 104,
+      "size_bytes": 2352,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 207",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "seat",
+        "dashboard",
+        "location",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 207,
+      "image_index": 8,
+      "filename": "page_207_img_08_795c1c71.png",
+      "file_path": "/static/manual_images/interior/page_207_img_08_795c1c71.png",
+      "width": 93,
+      "height": 93,
+      "size_bytes": 148,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 207",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "seat",
+        "dashboard",
+        "location",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 207,
+      "image_index": 10,
+      "filename": "page_207_img_10_d30e1cec.png",
+      "file_path": "/static/manual_images/interior/page_207_img_10_d30e1cec.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 5238,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 207",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "seat",
+        "dashboard",
+        "location",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 210,
+      "image_index": 2,
+      "filename": "page_210_img_02_ff24e522.png",
+      "file_path": "/static/manual_images/lights/page_210_img_02_ff24e522.png",
+      "width": 344,
+      "height": 472,
+      "size_bytes": 1108,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 210",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 220,
+      "image_index": 1,
+      "filename": "page_220_img_01_3fb6b0f6.png",
+      "file_path": "/static/manual_images/exterior/page_220_img_01_3fb6b0f6.png",
+      "width": 91,
+      "height": 91,
+      "size_bytes": 1055,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 220",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 220,
+      "image_index": 3,
+      "filename": "page_220_img_03_5a6f7143.png",
+      "file_path": "/static/manual_images/exterior/page_220_img_03_5a6f7143.png",
+      "width": 107,
+      "height": 90,
+      "size_bytes": 1720,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 220",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 221,
+      "image_index": 1,
+      "filename": "page_221_img_01_3fb6b0f6.png",
+      "file_path": "/static/manual_images/engine/page_221_img_01_3fb6b0f6.png",
+      "width": 91,
+      "height": 91,
+      "size_bytes": 1055,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 221",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "engine"
+      ]
+    },
+    {
+      "page_number": 223,
+      "image_index": 1,
+      "filename": "page_223_img_01_c4ad75fa.png",
+      "file_path": "/static/manual_images/engine/page_223_img_01_c4ad75fa.png",
+      "width": 78,
+      "height": 78,
+      "size_bytes": 961,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 223",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "engine"
+      ]
+    },
+    {
+      "page_number": 223,
+      "image_index": 4,
+      "filename": "page_223_img_04_b86a9a2d.png",
+      "file_path": "/static/manual_images/engine/page_223_img_04_b86a9a2d.png",
+      "width": 103,
+      "height": 91,
+      "size_bytes": 928,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 223",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "engine"
+      ]
+    },
+    {
+      "page_number": 223,
+      "image_index": 6,
+      "filename": "page_223_img_06_5a6f7143.png",
+      "file_path": "/static/manual_images/engine/page_223_img_06_5a6f7143.png",
+      "width": 107,
+      "height": 90,
+      "size_bytes": 1720,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 223",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "engine"
+      ]
+    },
+    {
+      "page_number": 245,
+      "image_index": 2,
+      "filename": "page_245_img_02_7af12f7a.png",
+      "file_path": "/static/manual_images/exterior/page_245_img_02_7af12f7a.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 583,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 245",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 245,
+      "image_index": 4,
+      "filename": "page_245_img_04_45aa1660.png",
+      "file_path": "/static/manual_images/exterior/page_245_img_04_45aa1660.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 297,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 245",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 245,
+      "image_index": 6,
+      "filename": "page_245_img_06_83992cc3.png",
+      "file_path": "/static/manual_images/exterior/page_245_img_06_83992cc3.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 1519,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 245",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 247,
+      "image_index": 1,
+      "filename": "page_247_img_01_7be1ea18.png",
+      "file_path": "/static/manual_images/safety/page_247_img_01_7be1ea18.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 616,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 247",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "emergency",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 249,
+      "image_index": 1,
+      "filename": "page_249_img_01_7be1ea18.png",
+      "file_path": "/static/manual_images/electrical/page_249_img_01_7be1ea18.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 616,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 249",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "electrical",
+        "battery"
+      ]
+    },
+    {
+      "page_number": 251,
+      "image_index": 2,
+      "filename": "page_251_img_02_b933da94.png",
+      "file_path": "/static/manual_images/interior/page_251_img_02_b933da94.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 1215,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 251",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "dashboard",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 251,
+      "image_index": 4,
+      "filename": "page_251_img_04_f738450f.png",
+      "file_path": "/static/manual_images/interior/page_251_img_04_f738450f.png",
+      "width": 343,
+      "height": 472,
+      "size_bytes": 3600,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 251",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "dashboard",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 252,
+      "image_index": 1,
+      "filename": "page_252_img_01_1bc83890.png",
+      "file_path": "/static/manual_images/brakes/page_252_img_01_1bc83890.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 713,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 252",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "disc",
+        "pad",
+        "location"
+      ]
+    },
+    {
+      "page_number": 252,
+      "image_index": 3,
+      "filename": "page_252_img_03_9791af1b.png",
+      "file_path": "/static/manual_images/brakes/page_252_img_03_9791af1b.png",
+      "width": 257,
+      "height": 177,
+      "size_bytes": 1840,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 252",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "disc",
+        "pad",
+        "location"
+      ]
+    },
+    {
+      "page_number": 253,
+      "image_index": 1,
+      "filename": "page_253_img_01_97e8f580.png",
+      "file_path": "/static/manual_images/electrical/page_253_img_01_97e8f580.png",
+      "width": 342,
+      "height": 177,
+      "size_bytes": 2253,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 253",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "electrical",
+        "battery",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 253,
+      "image_index": 3,
+      "filename": "page_253_img_03_fa531aa8.png",
+      "file_path": "/static/manual_images/electrical/page_253_img_03_fa531aa8.png",
+      "width": 481,
+      "height": 354,
+      "size_bytes": 3889,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 253",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "electrical",
+        "battery",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 253,
+      "image_index": 5,
+      "filename": "page_253_img_05_7d589eee.png",
+      "file_path": "/static/manual_images/electrical/page_253_img_05_7d589eee.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 1191,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 253",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "electrical",
+        "battery",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 253,
+      "image_index": 7,
+      "filename": "page_253_img_07_63ce33d3.png",
+      "file_path": "/static/manual_images/electrical/page_253_img_07_63ce33d3.png",
+      "width": 229,
+      "height": 177,
+      "size_bytes": 1850,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 253",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "electrical",
+        "battery",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 254,
+      "image_index": 2,
+      "filename": "page_254_img_02_9b6f66a1.png",
+      "file_path": "/static/manual_images/electrical/page_254_img_02_9b6f66a1.png",
+      "width": 454,
+      "height": 354,
+      "size_bytes": 3717,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 254",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "electrical",
+        "battery"
+      ]
+    },
+    {
+      "page_number": 254,
+      "image_index": 4,
+      "filename": "page_254_img_04_f4c36069.png",
+      "file_path": "/static/manual_images/electrical/page_254_img_04_f4c36069.png",
+      "width": 490,
+      "height": 354,
+      "size_bytes": 3783,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 254",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "electrical",
+        "battery"
+      ]
+    },
+    {
+      "page_number": 254,
+      "image_index": 5,
+      "filename": "page_254_img_05_63ce33d3.png",
+      "file_path": "/static/manual_images/electrical/page_254_img_05_63ce33d3.png",
+      "width": 229,
+      "height": 177,
+      "size_bytes": 1850,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 254",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "electrical",
+        "battery"
+      ]
+    },
+    {
+      "page_number": 255,
+      "image_index": 1,
+      "filename": "page_255_img_01_9791af1b.png",
+      "file_path": "/static/manual_images/engine/page_255_img_01_9791af1b.png",
+      "width": 257,
+      "height": 177,
+      "size_bytes": 1840,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 255",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "engine"
+      ]
+    },
+    {
+      "page_number": 258,
+      "image_index": 4,
+      "filename": "page_258_img_04_4f218a74.png",
+      "file_path": "/static/manual_images/brakes/page_258_img_04_4f218a74.png",
+      "width": 451,
+      "height": 354,
+      "size_bytes": 3342,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 258",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "position",
+        "disc"
+      ]
+    },
+    {
+      "page_number": 258,
+      "image_index": 7,
+      "filename": "page_258_img_07_1bc83890.png",
+      "file_path": "/static/manual_images/brakes/page_258_img_07_1bc83890.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 713,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 258",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "position",
+        "disc"
+      ]
+    },
+    {
+      "page_number": 258,
+      "image_index": 8,
+      "filename": "page_258_img_08_9791af1b.png",
+      "file_path": "/static/manual_images/brakes/page_258_img_08_9791af1b.png",
+      "width": 257,
+      "height": 177,
+      "size_bytes": 1840,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 258",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "position",
+        "disc"
+      ]
+    },
+    {
+      "page_number": 265,
+      "image_index": 1,
+      "filename": "page_265_img_01_855a7675.png",
+      "file_path": "/static/manual_images/exterior/page_265_img_01_855a7675.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1501,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 265",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "location",
+        "door",
+        "bumper"
+      ]
+    },
+    {
+      "page_number": 266,
+      "image_index": 3,
+      "filename": "page_266_img_03_7af12f7a.png",
+      "file_path": "/static/manual_images/interior/page_266_img_03_7af12f7a.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 583,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 266",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 275,
+      "image_index": 2,
+      "filename": "page_275_img_02_45aa1660.png",
+      "file_path": "/static/manual_images/exterior/page_275_img_02_45aa1660.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 297,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 275",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "hood",
+        "component"
+      ]
+    },
+    {
+      "page_number": 275,
+      "image_index": 3,
+      "filename": "page_275_img_03_83992cc3.png",
+      "file_path": "/static/manual_images/exterior/page_275_img_03_83992cc3.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 1519,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 275",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "hood",
+        "component"
+      ]
+    },
+    {
+      "page_number": 286,
+      "image_index": 2,
+      "filename": "page_286_img_02_ed82998b.png",
+      "file_path": "/static/manual_images/safety/page_286_img_02_ed82998b.png",
+      "width": 101,
+      "height": 157,
+      "size_bytes": 232,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 286",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "illustration",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 288,
+      "image_index": 2,
+      "filename": "page_288_img_02_888ea398.png",
+      "file_path": "/static/manual_images/safety/page_288_img_02_888ea398.png",
+      "width": 224,
+      "height": 224,
+      "size_bytes": 1776,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 288",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "illustration",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 296,
+      "image_index": 3,
+      "filename": "page_296_img_03_2f8d4fe7.png",
+      "file_path": "/static/manual_images/brakes/page_296_img_03_2f8d4fe7.png",
+      "width": 500,
+      "height": 345,
+      "size_bytes": 882,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 296",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "illustration",
+        "pad"
+      ]
+    },
+    {
+      "page_number": 297,
+      "image_index": 22,
+      "filename": "page_297_img_22_9785a17c.png",
+      "file_path": "/static/manual_images/lights/page_297_img_22_9785a17c.png",
+      "width": 118,
+      "height": 118,
+      "size_bytes": 152,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 297",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 297,
+      "image_index": 24,
+      "filename": "page_297_img_24_07b64de9.png",
+      "file_path": "/static/manual_images/lights/page_297_img_24_07b64de9.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1421,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 297",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 306,
+      "image_index": 2,
+      "filename": "page_306_img_02_ea291344.png",
+      "file_path": "/static/manual_images/brakes/page_306_img_02_ea291344.png",
+      "width": 390,
+      "height": 444,
+      "size_bytes": 1104,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 306",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "pad",
+        "component"
+      ]
+    },
+    {
+      "page_number": 306,
+      "image_index": 5,
+      "filename": "page_306_img_05_3a82556a.png",
+      "file_path": "/static/manual_images/brakes/page_306_img_05_3a82556a.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 580,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 306",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "pad",
+        "component"
+      ]
+    },
+    {
+      "page_number": 307,
+      "image_index": 5,
+      "filename": "page_307_img_05_19eba237.png",
+      "file_path": "/static/manual_images/maintenance/page_307_img_05_19eba237.png",
+      "width": 118,
+      "height": 118,
+      "size_bytes": 163,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 307",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "interval",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 307,
+      "image_index": 15,
+      "filename": "page_307_img_15_35dadedb.png",
+      "file_path": "/static/manual_images/maintenance/page_307_img_15_35dadedb.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 664,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 307",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "interval",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 307,
+      "image_index": 23,
+      "filename": "page_307_img_23_9785a17c.png",
+      "file_path": "/static/manual_images/maintenance/page_307_img_23_9785a17c.png",
+      "width": 118,
+      "height": 118,
+      "size_bytes": 152,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 307",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "interval",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 307,
+      "image_index": 24,
+      "filename": "page_307_img_24_07b64de9.png",
+      "file_path": "/static/manual_images/maintenance/page_307_img_24_07b64de9.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1421,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 307",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "interval",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 308,
+      "image_index": 20,
+      "filename": "page_308_img_20_19eba237.png",
+      "file_path": "/static/manual_images/lights/page_308_img_20_19eba237.png",
+      "width": 118,
+      "height": 118,
+      "size_bytes": 163,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 308",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 308,
+      "image_index": 21,
+      "filename": "page_308_img_21_35dadedb.png",
+      "file_path": "/static/manual_images/lights/page_308_img_21_35dadedb.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 664,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 308",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 308,
+      "image_index": 23,
+      "filename": "page_308_img_23_ea291344.png",
+      "file_path": "/static/manual_images/lights/page_308_img_23_ea291344.png",
+      "width": 390,
+      "height": 444,
+      "size_bytes": 1104,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 308",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 308,
+      "image_index": 25,
+      "filename": "page_308_img_25_3a82556a.png",
+      "file_path": "/static/manual_images/lights/page_308_img_25_3a82556a.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 580,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 308",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 308,
+      "image_index": 32,
+      "filename": "page_308_img_32_9785a17c.png",
+      "file_path": "/static/manual_images/lights/page_308_img_32_9785a17c.png",
+      "width": 118,
+      "height": 118,
+      "size_bytes": 152,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 308",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "led",
+        "lights"
+      ]
+    },
+    {
+      "page_number": 319,
+      "image_index": 1,
+      "filename": "page_319_img_01_1bbb78ac.png",
+      "file_path": "/static/manual_images/brakes/page_319_img_01_1bbb78ac.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 285,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 319",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "brake"
+      ]
+    },
+    {
+      "page_number": 319,
+      "image_index": 3,
+      "filename": "page_319_img_03_e6db1002.png",
+      "file_path": "/static/manual_images/brakes/page_319_img_03_e6db1002.png",
+      "width": 147,
+      "height": 60,
+      "size_bytes": 875,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 319",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "brake"
+      ]
+    },
+    {
+      "page_number": 319,
+      "image_index": 5,
+      "filename": "page_319_img_05_48f0f055.png",
+      "file_path": "/static/manual_images/brakes/page_319_img_05_48f0f055.png",
+      "width": 147,
+      "height": 60,
+      "size_bytes": 901,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 319",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "brake"
+      ]
+    },
+    {
+      "page_number": 319,
+      "image_index": 7,
+      "filename": "page_319_img_07_7b5bbc00.png",
+      "file_path": "/static/manual_images/brakes/page_319_img_07_7b5bbc00.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 3547,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 319",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "brake"
+      ]
+    },
+    {
+      "page_number": 325,
+      "image_index": 3,
+      "filename": "page_325_img_03_6f8d17b8.png",
+      "file_path": "/static/manual_images/wheels/page_325_img_03_6f8d17b8.png",
+      "width": 90,
+      "height": 59,
+      "size_bytes": 656,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 325",
+      "section": "wheels",
+      "figure_number": "",
+      "keywords": [
+        "wheels",
+        "wheel",
+        "pressure"
+      ]
+    },
+    {
+      "page_number": 329,
+      "image_index": 1,
+      "filename": "page_329_img_01_11d8f1a3.png",
+      "file_path": "/static/manual_images/brakes/page_329_img_01_11d8f1a3.png",
+      "width": 100,
+      "height": 100,
+      "size_bytes": 2531,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 329",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "pad"
+      ]
+    },
+    {
+      "page_number": 331,
+      "image_index": 4,
+      "filename": "page_331_img_04_1bbb78ac.png",
+      "file_path": "/static/manual_images/safety/page_331_img_04_1bbb78ac.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 285,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 331",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 331,
+      "image_index": 5,
+      "filename": "page_331_img_05_e6db1002.png",
+      "file_path": "/static/manual_images/safety/page_331_img_05_e6db1002.png",
+      "width": 147,
+      "height": 60,
+      "size_bytes": 875,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 331",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 331,
+      "image_index": 6,
+      "filename": "page_331_img_06_48f0f055.png",
+      "file_path": "/static/manual_images/safety/page_331_img_06_48f0f055.png",
+      "width": 147,
+      "height": 60,
+      "size_bytes": 901,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 331",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 331,
+      "image_index": 7,
+      "filename": "page_331_img_07_7b5bbc00.png",
+      "file_path": "/static/manual_images/safety/page_331_img_07_7b5bbc00.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 3547,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 331",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 348,
+      "image_index": 1,
+      "filename": "page_348_img_01_6f8d17b8.png",
+      "file_path": "/static/manual_images/exterior/page_348_img_01_6f8d17b8.png",
+      "width": 90,
+      "height": 59,
+      "size_bytes": 656,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 348",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 358,
+      "image_index": 1,
+      "filename": "page_358_img_01_3223d076.png",
+      "file_path": "/static/manual_images/maintenance/page_358_img_01_3223d076.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 2834,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 358",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "interval",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 369,
+      "image_index": 1,
+      "filename": "page_369_img_01_4c7bd420.png",
+      "file_path": "/static/manual_images/safety/page_369_img_01_4c7bd420.png",
+      "width": 667,
+      "height": 769,
+      "size_bytes": 2124,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 369",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 371,
+      "image_index": 5,
+      "filename": "page_371_img_05_97f60146.png",
+      "file_path": "/static/manual_images/lights/page_371_img_05_97f60146.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 3073,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 371",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "led",
+        "lights",
+        "location"
+      ]
+    },
+    {
+      "page_number": 371,
+      "image_index": 8,
+      "filename": "page_371_img_08_aa4bf56e.png",
+      "file_path": "/static/manual_images/lights/page_371_img_08_aa4bf56e.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1345,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 371",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "led",
+        "lights",
+        "location"
+      ]
+    },
+    {
+      "page_number": 393,
+      "image_index": 3,
+      "filename": "page_393_img_03_97f60146.png",
+      "file_path": "/static/manual_images/lights/page_393_img_03_97f60146.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 3073,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 393",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "lighting",
+        "lights",
+        "location"
+      ]
+    },
+    {
+      "page_number": 393,
+      "image_index": 4,
+      "filename": "page_393_img_04_aa4bf56e.png",
+      "file_path": "/static/manual_images/lights/page_393_img_04_aa4bf56e.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1345,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 393",
+      "section": "lights",
+      "figure_number": "",
+      "keywords": [
+        "lighting",
+        "lights",
+        "location"
+      ]
+    },
+    {
+      "page_number": 396,
+      "image_index": 2,
+      "filename": "page_396_img_02_97f60146.png",
+      "file_path": "/static/manual_images/exterior/page_396_img_02_97f60146.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 3073,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 396",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 396,
+      "image_index": 3,
+      "filename": "page_396_img_03_aa4bf56e.png",
+      "file_path": "/static/manual_images/exterior/page_396_img_03_aa4bf56e.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1345,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 396",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "door",
+        "mirror"
+      ]
+    },
+    {
+      "page_number": 415,
+      "image_index": 1,
+      "filename": "page_415_img_01_ec529e16.png",
+      "file_path": "/static/manual_images/transmission/page_415_img_01_ec529e16.png",
+      "width": 85,
+      "height": 138,
+      "size_bytes": 146,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 415",
+      "section": "transmission",
+      "figure_number": "",
+      "keywords": [
+        "transmission",
+        "position",
+        "shift",
+        "gear"
+      ]
+    },
+    {
+      "page_number": 422,
+      "image_index": 1,
+      "filename": "page_422_img_01_158fabdd.png",
+      "file_path": "/static/manual_images/transmission/page_422_img_01_158fabdd.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1495,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 422",
+      "section": "transmission",
+      "figure_number": "",
+      "keywords": [
+        "transmission",
+        "shift"
+      ]
+    },
+    {
+      "page_number": 424,
+      "image_index": 2,
+      "filename": "page_424_img_02_cca2c7b8.png",
+      "file_path": "/static/manual_images/general/page_424_img_02_cca2c7b8.png",
+      "width": 343,
+      "height": 236,
+      "size_bytes": 582,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 424",
+      "section": "general",
+      "figure_number": "",
+      "keywords": [
+        "general"
+      ]
+    },
+    {
+      "page_number": 432,
+      "image_index": 1,
+      "filename": "page_432_img_01_aac52b3c.png",
+      "file_path": "/static/manual_images/brakes/page_432_img_01_aac52b3c.png",
+      "width": 97,
+      "height": 215,
+      "size_bytes": 175,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 432",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "disc",
+        "brake"
+      ]
+    },
+    {
+      "page_number": 432,
+      "image_index": 3,
+      "filename": "page_432_img_03_ec049bc2.png",
+      "file_path": "/static/manual_images/brakes/page_432_img_03_ec049bc2.png",
+      "width": 357,
+      "height": 246,
+      "size_bytes": 2526,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 432",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "disc",
+        "brake"
+      ]
+    },
+    {
+      "page_number": 438,
+      "image_index": 1,
+      "filename": "page_438_img_01_458288fb.png",
+      "file_path": "/static/manual_images/engine/page_438_img_01_458288fb.png",
+      "width": 300,
+      "height": 241,
+      "size_bytes": 782,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 438",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "oil",
+        "engine",
+        "arrow",
+        "component"
+      ]
+    },
+    {
+      "page_number": 456,
+      "image_index": 1,
+      "filename": "page_456_img_01_92a04169.png",
+      "file_path": "/static/manual_images/exterior/page_456_img_01_92a04169.png",
+      "width": 102,
+      "height": 102,
+      "size_bytes": 726,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 456",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "bumper",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 456,
+      "image_index": 3,
+      "filename": "page_456_img_03_2408222b.png",
+      "file_path": "/static/manual_images/exterior/page_456_img_03_2408222b.png",
+      "width": 111,
+      "height": 111,
+      "size_bytes": 381,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 456",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "bumper",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 456,
+      "image_index": 5,
+      "filename": "page_456_img_05_5a017989.png",
+      "file_path": "/static/manual_images/exterior/page_456_img_05_5a017989.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 1720,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 456",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "bumper",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 456,
+      "image_index": 7,
+      "filename": "page_456_img_07_4978503c.png",
+      "file_path": "/static/manual_images/exterior/page_456_img_07_4978503c.png",
+      "width": 102,
+      "height": 102,
+      "size_bytes": 181,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 456",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "bumper",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 456,
+      "image_index": 9,
+      "filename": "page_456_img_09_b14c8c09.png",
+      "file_path": "/static/manual_images/exterior/page_456_img_09_b14c8c09.png",
+      "width": 205,
+      "height": 205,
+      "size_bytes": 1305,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 456",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "bumper",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 456,
+      "image_index": 11,
+      "filename": "page_456_img_11_a31c081f.png",
+      "file_path": "/static/manual_images/exterior/page_456_img_11_a31c081f.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 4724,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 456",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "bumper",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 456,
+      "image_index": 13,
+      "filename": "page_456_img_13_c789b315.png",
+      "file_path": "/static/manual_images/exterior/page_456_img_13_c789b315.png",
+      "width": 168,
+      "height": 116,
+      "size_bytes": 1226,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 456",
+      "section": "exterior",
+      "figure_number": "",
+      "keywords": [
+        "exterior",
+        "bumper",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 487,
+      "image_index": 1,
+      "filename": "page_487_img_01_0990f98f.png",
+      "file_path": "/static/manual_images/maintenance/page_487_img_01_0990f98f.png",
+      "width": 384,
+      "height": 305,
+      "size_bytes": 752,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 487",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "schedule",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 489,
+      "image_index": 1,
+      "filename": "page_489_img_01_0990f98f.png",
+      "file_path": "/static/manual_images/brakes/page_489_img_01_0990f98f.png",
+      "width": 384,
+      "height": 305,
+      "size_bytes": 752,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 489",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "pad"
+      ]
+    },
+    {
+      "page_number": 503,
+      "image_index": 1,
+      "filename": "page_503_img_01_4b415dbd.png",
+      "file_path": "/static/manual_images/brakes/page_503_img_01_4b415dbd.png",
+      "width": 101,
+      "height": 101,
+      "size_bytes": 140,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 503",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "pad"
+      ]
+    },
+    {
+      "page_number": 503,
+      "image_index": 5,
+      "filename": "page_503_img_05_149aff63.png",
+      "file_path": "/static/manual_images/brakes/page_503_img_05_149aff63.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 5497,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 503",
+      "section": "brakes",
+      "figure_number": "",
+      "keywords": [
+        "brakes",
+        "pad"
+      ]
+    },
+    {
+      "page_number": 518,
+      "image_index": 2,
+      "filename": "page_518_img_02_ede5103a.png",
+      "file_path": "/static/manual_images/maintenance/page_518_img_02_ede5103a.png",
+      "width": 54,
+      "height": 109,
+      "size_bytes": 381,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 518",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 520,
+      "image_index": 1,
+      "filename": "page_520_img_01_df8fe41c.png",
+      "file_path": "/static/manual_images/maintenance/page_520_img_01_df8fe41c.png",
+      "width": 153,
+      "height": 153,
+      "size_bytes": 243,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 520",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 520,
+      "image_index": 3,
+      "filename": "page_520_img_03_7ec4966c.png",
+      "file_path": "/static/manual_images/maintenance/page_520_img_03_7ec4966c.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1290,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 520",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 525,
+      "image_index": 1,
+      "filename": "page_525_img_01_15327f5e.png",
+      "file_path": "/static/manual_images/maintenance/page_525_img_01_15327f5e.png",
+      "width": 421,
+      "height": 472,
+      "size_bytes": 1198,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 525",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 554,
+      "image_index": 1,
+      "filename": "page_554_img_01_24821420.png",
+      "file_path": "/static/manual_images/wheels/page_554_img_01_24821420.png",
+      "width": 169,
+      "height": 116,
+      "size_bytes": 1029,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 554",
+      "section": "wheels",
+      "figure_number": "",
+      "keywords": [
+        "pressure",
+        "tire",
+        "bolt",
+        "wheels",
+        "wheel"
+      ]
+    },
+    {
+      "page_number": 554,
+      "image_index": 3,
+      "filename": "page_554_img_03_4cf9ca51.png",
+      "file_path": "/static/manual_images/wheels/page_554_img_03_4cf9ca51.png",
+      "width": 171,
+      "height": 118,
+      "size_bytes": 1891,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 554",
+      "section": "wheels",
+      "figure_number": "",
+      "keywords": [
+        "pressure",
+        "tire",
+        "bolt",
+        "wheels",
+        "wheel"
+      ]
+    },
+    {
+      "page_number": 560,
+      "image_index": 1,
+      "filename": "page_560_img_01_93386ebc.png",
+      "file_path": "/static/manual_images/wheels/page_560_img_01_93386ebc.png",
+      "width": 156,
+      "height": 114,
+      "size_bytes": 226,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 560",
+      "section": "wheels",
+      "figure_number": "",
+      "keywords": [
+        "pressure",
+        "tire",
+        "wheels",
+        "wheel",
+        "location"
+      ]
+    },
+    {
+      "page_number": 561,
+      "image_index": 1,
+      "filename": "page_561_img_01_3d6e750e.png",
+      "file_path": "/static/manual_images/wheels/page_561_img_01_3d6e750e.png",
+      "width": 195,
+      "height": 195,
+      "size_bytes": 1243,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 561",
+      "section": "wheels",
+      "figure_number": "",
+      "keywords": [
+        "illustration",
+        "tire",
+        "wheels",
+        "wheel",
+        "location",
+        "screw"
+      ]
+    },
+    {
+      "page_number": 568,
+      "image_index": 3,
+      "filename": "page_568_img_03_e2724e35.png",
+      "file_path": "/static/manual_images/interior/page_568_img_03_e2724e35.png",
+      "width": 357,
+      "height": 246,
+      "size_bytes": 628,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 568",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 570,
+      "image_index": 5,
+      "filename": "page_570_img_05_9eaf25d9.png",
+      "file_path": "/static/manual_images/electrical/page_570_img_05_9eaf25d9.png",
+      "width": 97,
+      "height": 97,
+      "size_bytes": 141,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 570",
+      "section": "electrical",
+      "figure_number": "",
+      "keywords": [
+        "wire",
+        "electrical"
+      ]
+    },
+    {
+      "page_number": 574,
+      "image_index": 2,
+      "filename": "page_574_img_02_aac52b3c.png",
+      "file_path": "/static/manual_images/transmission/page_574_img_02_aac52b3c.png",
+      "width": 97,
+      "height": 215,
+      "size_bytes": 175,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 574",
+      "section": "transmission",
+      "figure_number": "",
+      "keywords": [
+        "transmission",
+        "position",
+        "shift",
+        "gear"
+      ]
+    },
+    {
+      "page_number": 574,
+      "image_index": 3,
+      "filename": "page_574_img_03_ec049bc2.png",
+      "file_path": "/static/manual_images/transmission/page_574_img_03_ec049bc2.png",
+      "width": 357,
+      "height": 246,
+      "size_bytes": 2526,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 574",
+      "section": "transmission",
+      "figure_number": "",
+      "keywords": [
+        "transmission",
+        "position",
+        "shift",
+        "gear"
+      ]
+    },
+    {
+      "page_number": 576,
+      "image_index": 1,
+      "filename": "page_576_img_01_b84874bd.png",
+      "file_path": "/static/manual_images/interior/page_576_img_01_b84874bd.png",
+      "width": 95,
+      "height": 95,
+      "size_bytes": 135,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 576",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 576,
+      "image_index": 3,
+      "filename": "page_576_img_03_fa143e13.png",
+      "file_path": "/static/manual_images/interior/page_576_img_03_fa143e13.png",
+      "width": 357,
+      "height": 246,
+      "size_bytes": 2162,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 576",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "seat",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 577,
+      "image_index": 2,
+      "filename": "page_577_img_02_9f95818a.png",
+      "file_path": "/static/manual_images/interior/page_577_img_02_9f95818a.png",
+      "width": 94,
+      "height": 94,
+      "size_bytes": 135,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 577",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "illustration",
+        "seat",
+        "interior",
+        "arrow"
+      ]
+    },
+    {
+      "page_number": 577,
+      "image_index": 5,
+      "filename": "page_577_img_05_7ec4966c.png",
+      "file_path": "/static/manual_images/interior/page_577_img_05_7ec4966c.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 1290,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 577",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "position",
+        "illustration",
+        "seat",
+        "interior",
+        "arrow"
+      ]
+    },
+    {
+      "page_number": 579,
+      "image_index": 4,
+      "filename": "page_579_img_04_a875c2ee.png",
+      "file_path": "/static/manual_images/general/page_579_img_04_a875c2ee.png",
+      "width": 171,
+      "height": 177,
+      "size_bytes": 2186,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 579",
+      "section": "general",
+      "figure_number": "",
+      "keywords": [
+        "general",
+        "position"
+      ]
+    },
+    {
+      "page_number": 580,
+      "image_index": 1,
+      "filename": "page_580_img_01_864276d6.png",
+      "file_path": "/static/manual_images/safety/page_580_img_01_864276d6.png",
+      "width": 686,
+      "height": 473,
+      "size_bytes": 8531,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 580",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "position",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 580,
+      "image_index": 4,
+      "filename": "page_580_img_04_f407d2de.png",
+      "file_path": "/static/manual_images/safety/page_580_img_04_f407d2de.png",
+      "width": 343,
+      "height": 355,
+      "size_bytes": 3098,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 580",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "position",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 580,
+      "image_index": 6,
+      "filename": "page_580_img_06_591f70e0.png",
+      "file_path": "/static/manual_images/safety/page_580_img_06_591f70e0.png",
+      "width": 343,
+      "height": 355,
+      "size_bytes": 4259,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 580",
+      "section": "safety",
+      "figure_number": "",
+      "keywords": [
+        "safety",
+        "position",
+        "warning"
+      ]
+    },
+    {
+      "page_number": 581,
+      "image_index": 2,
+      "filename": "page_581_img_02_d430359f.png",
+      "file_path": "/static/manual_images/interior/page_581_img_02_d430359f.png",
+      "width": 381,
+      "height": 198,
+      "size_bytes": 6250,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 581",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "position",
+        "seat",
+        "assembly",
+        "screw",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 581,
+      "image_index": 4,
+      "filename": "page_581_img_04_1fa7daf0.png",
+      "file_path": "/static/manual_images/interior/page_581_img_04_1fa7daf0.png",
+      "width": 381,
+      "height": 198,
+      "size_bytes": 2806,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 581",
+      "section": "interior",
+      "figure_number": "",
+      "keywords": [
+        "console",
+        "position",
+        "seat",
+        "assembly",
+        "screw",
+        "interior"
+      ]
+    },
+    {
+      "page_number": 597,
+      "image_index": 1,
+      "filename": "page_597_img_01_0b98befa.png",
+      "file_path": "/static/manual_images/maintenance/page_597_img_01_0b98befa.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 6397,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 597",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 597,
+      "image_index": 3,
+      "filename": "page_597_img_03_3814a5ab.png",
+      "file_path": "/static/manual_images/maintenance/page_597_img_03_3814a5ab.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 6748,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 597",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 598,
+      "image_index": 2,
+      "filename": "page_598_img_02_55a5db0d.png",
+      "file_path": "/static/manual_images/engine/page_598_img_02_55a5db0d.png",
+      "width": 381,
+      "height": 262,
+      "size_bytes": 678,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 598",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "coolant",
+        "component",
+        "location",
+        "radiator",
+        "oil",
+        "engine"
+      ]
+    },
+    {
+      "page_number": 598,
+      "image_index": 4,
+      "filename": "page_598_img_04_1aacea1e.png",
+      "file_path": "/static/manual_images/engine/page_598_img_04_1aacea1e.png",
+      "width": 121,
+      "height": 80,
+      "size_bytes": 158,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 598",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "coolant",
+        "component",
+        "location",
+        "radiator",
+        "oil",
+        "engine"
+      ]
+    },
+    {
+      "page_number": 598,
+      "image_index": 8,
+      "filename": "page_598_img_08_9895c5b7.png",
+      "file_path": "/static/manual_images/engine/page_598_img_08_9895c5b7.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 4699,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 598",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "coolant",
+        "component",
+        "location",
+        "radiator",
+        "oil",
+        "engine"
+      ]
+    },
+    {
+      "page_number": 599,
+      "image_index": 2,
+      "filename": "page_599_img_02_55a5db0d.png",
+      "file_path": "/static/manual_images/maintenance/page_599_img_02_55a5db0d.png",
+      "width": 381,
+      "height": 262,
+      "size_bytes": 678,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 599",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "interval",
+        "service",
+        "component",
+        "maintenance",
+        "location"
+      ]
+    },
+    {
+      "page_number": 601,
+      "image_index": 1,
+      "filename": "page_601_img_01_d2dd1b17.png",
+      "file_path": "/static/manual_images/engine/page_601_img_01_d2dd1b17.png",
+      "width": 189,
+      "height": 189,
+      "size_bytes": 285,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 601",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "oil",
+        "engine",
+        "dipstick",
+        "coolant"
+      ]
+    },
+    {
+      "page_number": 601,
+      "image_index": 3,
+      "filename": "page_601_img_03_9895c5b7.png",
+      "file_path": "/static/manual_images/engine/page_601_img_03_9895c5b7.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 4699,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 601",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "oil",
+        "engine",
+        "dipstick",
+        "coolant"
+      ]
+    },
+    {
+      "page_number": 602,
+      "image_index": 1,
+      "filename": "page_602_img_01_8a4ab009.png",
+      "file_path": "/static/manual_images/engine/page_602_img_01_8a4ab009.png",
+      "width": 342,
+      "height": 177,
+      "size_bytes": 1484,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 602",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "engine",
+        "screw",
+        "coolant",
+        "component"
+      ]
+    },
+    {
+      "page_number": 602,
+      "image_index": 3,
+      "filename": "page_602_img_03_283580f0.png",
+      "file_path": "/static/manual_images/engine/page_602_img_03_283580f0.png",
+      "width": 342,
+      "height": 177,
+      "size_bytes": 1413,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 602",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "engine",
+        "screw",
+        "coolant",
+        "component"
+      ]
+    },
+    {
+      "page_number": 602,
+      "image_index": 5,
+      "filename": "page_602_img_05_81264867.png",
+      "file_path": "/static/manual_images/engine/page_602_img_05_81264867.png",
+      "width": 342,
+      "height": 236,
+      "size_bytes": 2532,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 602",
+      "section": "engine",
+      "figure_number": "",
+      "keywords": [
+        "engine",
+        "screw",
+        "coolant",
+        "component"
+      ]
+    },
+    {
+      "page_number": 643,
+      "image_index": 1,
+      "filename": "page_643_img_01_bbbe1677.png",
+      "file_path": "/static/manual_images/maintenance/page_643_img_01_bbbe1677.png",
+      "width": 233,
+      "height": 307,
+      "size_bytes": 3198,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 643",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "replace",
+        "position",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 643,
+      "image_index": 3,
+      "filename": "page_643_img_03_85b29b97.png",
+      "file_path": "/static/manual_images/maintenance/page_643_img_03_85b29b97.png",
+      "width": 685,
+      "height": 472,
+      "size_bytes": 6271,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 643",
+      "section": "maintenance",
+      "figure_number": "",
+      "keywords": [
+        "replace",
+        "position",
+        "service",
+        "maintenance"
+      ]
+    },
+    {
+      "page_number": 648,
+      "image_index": 2,
+      "filename": "page_648_img_02_a7cc2b1e.png",
+      "file_path": "/static/manual_images/general/page_648_img_02_a7cc2b1e.png",
+      "width": 650,
+      "height": 295,
+      "size_bytes": 8369,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 648",
+      "section": "general",
+      "figure_number": "",
+      "keywords": [
+        "general",
+        "illustration",
+        "location"
+      ]
+    },
+    {
+      "page_number": 679,
+      "image_index": 7,
+      "filename": "page_679_img_07_10d49787.png",
+      "file_path": "/static/manual_images/general/page_679_img_07_10d49787.png",
+      "width": 114,
+      "height": 113,
+      "size_bytes": 157,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 679",
+      "section": "general",
+      "figure_number": "",
+      "keywords": [
+        "general"
+      ]
+    },
+    {
+      "page_number": 679,
+      "image_index": 14,
+      "filename": "page_679_img_14_d2c819ff.png",
+      "file_path": "/static/manual_images/general/page_679_img_14_d2c819ff.png",
+      "width": 145,
+      "height": 144,
+      "size_bytes": 227,
+      "image_type": "PNG",
+      "caption": "Manual illustration from page 679",
+      "section": "general",
+      "figure_number": "",
+      "keywords": [
+        "general"
+      ]
+    }
+  ],
+  "sections": [
+    "controls",
+    "lights",
+    "exterior",
+    "electrical",
+    "brakes",
+    "maintenance",
+    "general",
+    "wheels",
+    "introduction",
+    "transmission",
+    "safety",
+    "engine",
+    "interior"
+  ]
+}
